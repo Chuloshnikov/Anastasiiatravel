@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/hero.module.css';
+import styles from '../styles/cinzel.module.css';
 import Image from 'next/image';
 import hero from '../assets/images/hero1.webp';
 import Link from 'next/link';
