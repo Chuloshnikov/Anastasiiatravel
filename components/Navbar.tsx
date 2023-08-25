@@ -12,8 +12,9 @@ const Navbar = () => {
     <div 
     className='z-20 fixed w-full flex justify-between mdl:px-16 py-8 xs:px-4'
     >
-      <div 
+      <Link 
       className='flex font-bold items-center justify-center text-2xl tracking-tighter'
+      href="/"
       >
         <Image
         className='h-[62px] w-[62px] rounded-full border-4 border-white'
@@ -30,11 +31,11 @@ const Navbar = () => {
               Travel
             </p>
         </div>
-      </div>
+      </Link>
       <nav
       >
         <ul 
-        className='xs:hidden lg:flex gap-6 leading-3 mx-8 my-8 font-semibold text-base tracking-widest'
+        className='xs:hidden lg:flex gap-6 leading-3 px-8 py-8 font-semibold text-base tracking-widest border-2 border-yellow-500'
         >
           <li>
             <Link 

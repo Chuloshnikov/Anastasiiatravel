@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/hero.module.css';
 import Image from 'next/image';
 import hero from '../assets/images/hero1.webp';
+import Link from 'next/link';
 
 
 
@@ -15,12 +16,17 @@ const Hero = () => {
         >
         </div>
         <h1
-        className={`${styles.exoFont} absolute w-[500px] h-12 z-10 font-semibold text-6xl top-[38%] left-[20%] text-yellow-500`}
+        className={`${styles.cinzelFont} tracking-widest absolute z-10 font-base text-[68px] top-[38%] left-[20%] text-yellow-500`}
         >
             ПОДОРОЖУЙ РАЗОМ З НАМИ
         </h1>
+        <Link 
+        className='absolute z-10 top-[52%] left-[45%] text-4xl tracking-tight font-normal px-8 py-4 border-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300'
+        href="/"
+        >
+           календар турів
+        </Link>
         <Image
-        
         src={hero}/>
     </div>
   )
