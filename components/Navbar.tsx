@@ -9,7 +9,7 @@ const Navbar = () => {
   const {openMenu, setOpenMenu} = useState(false);
 
   return (
-    <div 
+    <header 
     className='z-20 fixed w-full flex justify-between mdl:px-16 py-8 xs:px-4'
     >
       <Link 
@@ -84,7 +84,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   )
 }
 
