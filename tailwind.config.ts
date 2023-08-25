@@ -34,6 +34,23 @@ const config: Config = {
       },
     },
   },
+  fonts: [
+    {
+      name: 'Exo 2',
+      files: {
+        regular: '/fonts/exo2-regular.woff2', // Путь к файлу шрифта
+      },
+      styles: {
+        regular: {
+          normal: {
+            weight: 400,
+            style: 'normal',
+          },
+        },
+      },
+    },
+    // Добавьте блоки для других стилей шрифта (жирный, курсив и т.д.), если они нужны
+  ],
   plugins: [],
 }
 export default config

@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div 
-    className='stiky flex justify-between mdl:px-16 py-8 xs:px-4'
+    className='z-20 fixed w-full flex justify-between mdl:px-16 py-8 xs:px-4'
     >
       <div 
       className='flex font-bold items-center justify-center text-2xl tracking-tighter'

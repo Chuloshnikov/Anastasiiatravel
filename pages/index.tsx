@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero';
 import Head from 'next/head';
 
 
@@ -11,8 +12,8 @@ export default function Home() {
         <link rel="icon" href="favicon.ico" />
       </Head>
       <main>
-          <div className='text-gray-600 mx-auto'>
-          dfgggdfg
+          <div className='text-white mx-auto'>
+              <Hero/>
           </div>
       </main>
     </>
