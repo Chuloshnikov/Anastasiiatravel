@@ -12,6 +12,10 @@ const Navbar = () => {
     <header 
     className='z-20 fixed w-full flex justify-between mdl:px-16 py-8 xs:px-4'
     >
+      <div
+      className='-z-20 absolute w-full h-full bg-yellow-700 top-0 left-0 opacity-20'
+      >
+      </div>
       <Link 
       className='flex font-bold items-center justify-center text-2xl tracking-tighter'
       href="/"
@@ -35,7 +39,7 @@ const Navbar = () => {
       <nav
       >
         <ul 
-        className='xs:hidden lg:flex gap-6 leading-3 px-8 py-8 font-semibold text-base tracking-widest border-2 border-yellow-500'
+        className='z-50 xs:hidden lg:flex gap-6 leading-3 px-8 py-8 font-semibold text-base tracking-widest border-2 border-yellow-500'
         >
           <li>
             <Link 
