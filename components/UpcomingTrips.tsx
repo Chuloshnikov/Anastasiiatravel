@@ -6,7 +6,7 @@ import Trip from './Trip';
 const UpcomingTrips = () => {
   return (
     <div
-    className='bg-[#749CBA] text-center pt-24'
+    className='bg-[#749CBA] text-center pt-24 pb-12'
     >
         <h2
         className={`${styles.cinzelFont} font-base tracking-widest text-[62px] text-yellow-500 mb-24`}
