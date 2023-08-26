@@ -74,7 +74,7 @@ const Navbar = () => {
             href="/"
             rel="noopener noreferrer"
             >
-              ПРО МЕНЕ
+              ПРО НАС
             </Link>
           </li>
           <li>
