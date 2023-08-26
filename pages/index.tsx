@@ -1,3 +1,4 @@
+import AboutUs from '@/components/AboutUs';
 import Hero from '@/components/Hero';
 import UpcomingTrips from '@/components/UpcomingTrips';
 import Head from 'next/head';
@@ -17,6 +18,7 @@ export default function Home() {
         </div>
       <main>
           <UpcomingTrips/>
+          <AboutUs/>
       </main>
     </>
   )
