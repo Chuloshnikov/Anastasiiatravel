@@ -21,7 +21,8 @@ const Hero = () => {
             ПОДОРОЖУЙ РАЗОМ З НАМИ
         </h1>
         <Link 
-        className='absolute z-10 top-[52%] left-[45%] text-4xl tracking-tight font-normal px-8 py-4 border-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300'
+        className='absolute z-10 top-[52%] left-[45%] text-4xl tracking-tight font-normal 
+        px-8 py-4 border-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300 rounded-2xl'
         href="/"
         >
            календар турів

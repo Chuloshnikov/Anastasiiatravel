@@ -1,19 +1,36 @@
 "use client"
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../assets/icons/logo.webp';
 
 const Navbar = () => {
 
-  const {openMenu, setOpenMenu} = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const shouldShowBackground = Math.min(scrollY / (typeof window !== 'undefined' ? window.innerHeight * 0.5 : 1));
+  const shouldShowBorder = Math.min(scrollY / (typeof window !== 'undefined' ? window.innerHeight * 0.5 : 1));
+
+  
+  
+
 
   return (
     <header 
-    className='z-20 fixed w-full flex justify-between mdl:px-16 py-8 xs:px-4'
-    >
+    className='z-20 fixed w-full flex justify-between mdl:px-16 py-8 xs:px-4'>
       <div
-      className='-z-20 absolute w-full h-full bg-yellow-700 top-0 left-0 opacity-20'
+        className={`z-10 absolute w-full h-full top-0 left-0 ${shouldShowBackground ? 'bg-yellow-700 opacity-20' : ''}`}
       >
       </div>
       <Link 
@@ -39,8 +56,9 @@ const Navbar = () => {
       <nav
       >
         <ul 
-        className='z-50 xs:hidden lg:flex gap-6 leading-3 px-8 py-8 font-semibold text-base tracking-widest border-2 border-yellow-500'
-        >
+         className={`z-50 xs:hidden lg:flex gap-6 leading-3 px-8 py-8 font-semibold 
+         text-base tracking-widest ${shouldShowBackground ? 'border-2 border-yellow-500 rounded-2xl' : ''}`}
+         >
           <li>
             <Link 
             className="text-underline-animation text-underline-left hover:text-underline-left-hover"
