@@ -32,7 +32,7 @@ const UpcomingTrips = () => {
                         <h3
                             className={`${styles.cinzelFont} font-semibold text-[32px] text-yellow-500 mb-2`}
                             >
-                                Мадейра
+                                Мoдейра
                         </h3>
                         <p
                         className='font-semibold text-xl'
