@@ -1,5 +1,6 @@
 import AboutUs from '@/components/AboutUs';
 import Hero from '@/components/Hero';
+import SocialPages from '@/components/SocialPages';
 import UpcomingTrips from '@/components/UpcomingTrips';
 import Head from 'next/head';
 
@@ -19,6 +20,7 @@ export default function Home() {
       <main>
           <UpcomingTrips/>
           <AboutUs/>
+          <SocialPages/>
       </main>
     </>
   )
