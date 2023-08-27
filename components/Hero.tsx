@@ -9,12 +9,9 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <div
-    className='h-[1000px] w-full'
+    className='h-full w-full'
     >
-        <div 
-        className='absolute bg-black h-[1000px] w-full opacity-30'
-        >
-        </div>
+        
         <h1
         className={`${styles.cinzelFont} tracking-widest absolute z-10 font-base text-[68px] top-[38%] left-[20%] text-yellow-500`}
         >
@@ -28,6 +25,7 @@ const Hero = () => {
            календар турів
         </Link>
         <Image
+        className='h-[100%] brightness-50'
         src={hero}/>
     </div>
   )
