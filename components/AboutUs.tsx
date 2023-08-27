@@ -6,6 +6,7 @@ import bigone from '../assets/images/oneBig.webp';
 import withWine from '../assets/images/withWine.webp';
 import two from '../assets/images/two.webp';
 import bigtwo from '../assets/images/twoBig.webp';
+import Link from 'next/link';
 
 const AboutUs = () => {
   return (
@@ -19,13 +20,13 @@ const AboutUs = () => {
         </h2>
         <div>
             <div
-            className='border-2 border-yellow-500 rounded-2xl flex mx-40'
+            className='border-2 border-yellow-500 rounded-2xl flex gap-5 mx-40'
             >
                 <div
-                className='w-[40%] p-8'
+                className=' flex w-[50%] p-14'
                 >
                     <p
-                    className={`${styles.cinzelFont} font-normal tracking-widest text-base text-yellow-900`}
+                    className={`${styles.cinzelFont} font-normal tracking-widest text-2xl text-yellow-900`}
                     >
                         Ми організовуєм незабутні тури для невеликих груп. Відвідай обов'язкові місця та відкрий для себе наші унікальні локації.
                         "Anastasiia Travel" - це авторські, групові та комфортні тури. Ми ретельно плануємо кожну подорож, надаючи зручний графік та професійних гідів.
@@ -35,7 +36,7 @@ const AboutUs = () => {
                     </p>
                 </div>
                 <div
-                className='flex justify-end w-[50%] gap-5 py-8'
+                className='flex justify-end w-[50%] gap-10 p-14'
                 >
                     <div
                     className='flex flex-col gap-5'
@@ -58,12 +59,23 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div
-                    className=''
+                    className='flex flex-col gap-14'
                     >
                         <Image 
                         className='w-[400px] rounded-2xl'
                         src={withWine}
                         />
+                        <div
+                        className=''
+                        >
+                            <Link 
+                            className='text-yellow-500 px-8 p-8 border-2 border-yellow-500 rounded-2xl hover:border-[#408692] hover:text-[#408692] duration-300'
+                            href="/"
+                            >
+                                БІЛЬШЕ ПРО НАС
+                            </Link>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

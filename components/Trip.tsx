@@ -58,7 +58,7 @@ const Trip = () => {
                             className='my-6'
                             >
                                 <Link 
-                                    className=' px-4 py-2 border-2 hover:text-yellow-500 hover:border-yellow-500 duration-300 text-base'
+                                    className=' px-4 py-2 border-2 hover:text-yellow-500 hover:border-yellow-500 duration-300 text-base rounded-lg'
                                     href="/"
                                     >
                                     Деталі
