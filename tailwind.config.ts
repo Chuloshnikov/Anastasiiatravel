@@ -51,6 +51,8 @@ const config: Config = {
     },
     // Добавьте блоки для других стилей шрифта (жирный, курсив и т.д.), если они нужны
   ],
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 export default config

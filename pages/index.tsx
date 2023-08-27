@@ -1,4 +1,5 @@
 import AboutUs from '@/components/AboutUs';
+import ContactWithUs from '@/components/ContactWithUs';
 import Hero from '@/components/Hero';
 import MeinGalery from '@/components/MeinGalery';
 import SocialPages from '@/components/SocialPages';
@@ -25,6 +26,7 @@ export default function Home() {
           <SocialPages/>
           <MeinGalery/>
           <SpecialAbout/>
+          <ContactWithUs/>
       </main>
     </>
   )
