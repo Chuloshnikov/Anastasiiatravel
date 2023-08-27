@@ -34,7 +34,7 @@ const MeinGalery = () => {
             className='flex mx-auto w-full'
             >
                 <div
-                className='flex gap-2 px-6 py-6 bg-[#749CBA] rounded-2xl'
+                className='flex gap-2 px-6 py-6 rounded-2xl'
                 >
                     <div
                     className='flex flex-col gap-2 mt-12'
