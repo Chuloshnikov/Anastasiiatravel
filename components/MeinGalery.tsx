@@ -28,13 +28,13 @@ const MeinGalery = () => {
     className='bg-gray-100 pt-24 pb-12'
     >
         <div
-        className='border-2 border-yellow-500 rounded-2xl flex gap-5 mx-40'
+        className='border-2 border-yellow-500 rounded-2xl flex mx-40'
         >
             <div
-            className='flex mx-auto pt-6 pb-2 w-full'
+            className='flex mx-auto w-full'
             >
                 <div
-                className='flex gap-2 px-6'
+                className='flex gap-2 px-6 py-6 bg-[#749CBA] rounded-2xl'
                 >
                     <div
                     className='flex flex-col gap-2 mt-12'
