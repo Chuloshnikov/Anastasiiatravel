@@ -8,7 +8,7 @@ const SocialPages = () => {
     className='text-center pt-24 pb-12'
     >
         <h2
-        className={`${styles.cinzelFont} font-base tracking-widest text-[62px] text-yellow-500 mb-24`}
+        className={`${styles.cinzelFont} font-base tracking-widest text-[62px] text-yellow-500 mb-8`}
         >
           Зв'яжись з нами
         </h2>
