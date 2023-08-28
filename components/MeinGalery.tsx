@@ -25,16 +25,16 @@ import {
 const MeinGalery = () => {
   return (
     <div
-    className='bg-gray-100 pt-24 pb-12'
+    className='bg-gray-100  xs:pt-12 md:pt-24 pb-12'
     >
         <div
-        className='border-2 border-yellow-500 rounded-2xl flex mx-40'
+        className='border-2 border-yellow-500 rounded-2xl flex xs:mx-6 md:mx-20 lg:mx-40'
         >
             <div
-            className='flex mx-auto w-full'
+            className='flex mx-auto w-full xs:hidden mdl:flex'
             >
                 <div
-                className='flex gap-2 px-6 py-6 rounded-2xl'
+                className='flex gap-2 xs:p-2 mdl:p-6 rounded-2xl'
                 >
                     <div
                     className='flex flex-col gap-2 mt-12'
@@ -117,6 +117,42 @@ const MeinGalery = () => {
                             src={sixteen}/>
                     </div>
                 </div>
+            </div>
+            <div
+            className='mdl:hidden xs:flex flex-col gap-2 p-2'
+            >
+                        <Image 
+                            className='rounded-2xl w-full'
+                            src={fifteen}/>
+                        <Image 
+                            className='rounded-2xl w-full'
+                            src={sixteen}/>
+                        <Image 
+                            className='rounded-2xl w-full'
+                        src={eleven}/>
+                        <Image 
+                            className='rounded-2xl w-full'
+                        src={thirteen}/>
+                         <Image 
+                            className='rounded-2xl w-full'
+                            src={nine}/>
+                        <Image 
+                            className='rounded-2xl w-full'
+                            src={ten}/>
+                        <Image 
+                            className='rounded-2xl w-full'
+                            src={eight}/>
+                        <Image 
+                            className='rounded-2xl w-full'
+                            src={eighteen}/>
+                        <Image 
+                            className='rounded-2xl w-full'
+                        src={one}/>
+                        <Image 
+                            className='rounded-2xl w-full'
+                        src={three}/>
+                        
+                        
             </div>
         </div>
     </div>

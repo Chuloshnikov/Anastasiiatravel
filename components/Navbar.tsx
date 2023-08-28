@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <header 
-    className='z-20 fixed w-full flex justify-between mdl:px-16 py-8 xs:px-4'>
+    className='z-20 fixed w-full flex justify-between mdl:px-16 mdl:py-8 xs:px-4 xs:py-4'>
       <div
         className={`-z-10 absolute w-full h-full top-0 left-0 ${shouldShowBackground ? 'bg-[#408692] opacity-20' : ''}`}
       >

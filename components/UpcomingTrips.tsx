@@ -6,15 +6,15 @@ import Trip from './Trip';
 const UpcomingTrips = () => {
   return (
     <div
-    className='bg-[#749CBA] text-center pt-24 pb-12'
+    className='bg-[#749CBA] text-center xs:pt-12 md:pt-24 pb-12'
     >
         <h2
-        className={`${styles.cinzelFont} font-base tracking-widest text-[62px] text-yellow-500 mb-24`}
+        className={`${styles.cinzelFont} font-base tracking-widest xs:text-[32px] md:text-[44px] xl:text-[62px] text-yellow-500 xs:mb-12 md:mb-24`}
         >
-            НАЙБЛИЖЧІ ТУРИ
+            НАЙБЛИЖЧИй ТУР
         </h2>
         <div 
-        className='mb-12 flex gap-5 justify-center'
+        className='xs:mb-6 md:mb-12 flex gap-5 justify-center'
         >
             <Trip/>
         </div>
