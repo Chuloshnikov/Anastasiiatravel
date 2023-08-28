@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from '../styles/cinzel.module.css';
 
+import emailjs from '@emailjs/browser';
+
 const ContactWithUs = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_nsgwksa', 'template_ne8ic1j', form.current, '5slQGibGo721XLdVU')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  };
+
   return (
     <div
     className='bg-gray-100 pt-24 pb-12 text-center'
@@ -20,36 +38,35 @@ const ContactWithUs = () => {
         className='mx-40'
         >
             <form
+            ref={form} 
+            onSubmit={sendEmail}
             className='flex flex-col gap-5 justify-center mt-12'
             >
                 <input
                 className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
                 type="text"
+                name="name"
                 required
                 placeholder="введіть ваше і&#39;мя..."
                 />
                 <input
                 className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
-                type="tel" 
-                id="phone" 
-                name="phone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                type="number" 
+                name="phone" 
                 required
-                placeholder="+380737777777..."
+                placeholder="380737777777..."
                 />
                 <input
                 className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
                 type="email" 
-                id="email" 
-                pattern=".+@globex\.com"
+                name="email"
                 required
                 placeholder="вашемайл@gmail.com..."
                 />
                 <input
                 className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
                 type="text" 
-                id="testimonials" 
-                pattern=".+@globex\.com"
+                name="message"
                 required
                 placeholder="Напишить який тур Вас цікавить, або ваше питання..."
                 />
@@ -60,11 +77,19 @@ const ContactWithUs = () => {
                 </label>
                 <select
             className='text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-1 focus:ring-0'
-            value=''
+            name="communication"
           >
             <option value={0}>По телефону</option>
             <option value={1}>Через месенджер</option>
           </select>
+          <div>
+            <button
+            className='p-4 border-2 border-yellow-500 text-[#408692] rounded-2xl hover:text-yellow-500 hover:border-[#408692] duration-300'
+            type='submit'
+            >
+              Відправити
+            </button>
+          </div>
             </form>
         </div>
     </div>
