@@ -26,7 +26,7 @@ const ContactWithUs = () => {
                 className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
                 type="text"
                 required
-                placeholder="name"
+                placeholder="введіть ваше і&#39;мя..."
                 />
                 <input
                 className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
@@ -35,14 +35,23 @@ const ContactWithUs = () => {
                 name="phone"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
                 required
-                placeholder="+380737777777"
+                placeholder="+380737777777..."
                 />
                 <input
                 className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
                 type="email" 
                 id="email" 
                 pattern=".+@globex\.com"
-                placeholder="mail@gmail.com"
+                required
+                placeholder="вашемайл@gmail.com..."
+                />
+                <input
+                className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
+                type="text" 
+                id="testimonials" 
+                pattern=".+@globex\.com"
+                required
+                placeholder="Напишить який тур Вас цікавить, або ваше питання..."
                 />
                 <label
                 className='text-[#408692] text-lg'
