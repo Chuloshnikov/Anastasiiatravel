@@ -22,20 +22,20 @@ const ContactWithUs = () => {
 
   return (
     <div
-    className='bg-gray-100 pt-24 pb-12 text-center'
+    className='bg-gray-100 xs:pt-12 mdl:pt-24 xs:pb-6 mdl:pb-12 text-center'
     >
         <h2
-        className={`${styles.cinzelFont} font-base tracking-widest text-[62px] text-yellow-500 mb-2`}
+        className={`${styles.cinzelFont} font-base tracking-widest xs:text-[22px] md:text-[44px] xl:text-[68px] text-yellow-500 mb-2`}
         >
             МАЕШ ЗАПИТАННЯ?
         </h2>
         <p
-        className='text-[#408692] text-2xl'
+        className='text-[#408692] xs:text-lg mdl:text-2xl xs:mx-2 mdl:mx-0'
         >
             Залиш свої контакні данні та ми дамо фідбек
         </p>
         <div
-        className='mx-40'
+        className='xs:mx-4 mdl:mx-40'
         >
             <form
             ref={form} 

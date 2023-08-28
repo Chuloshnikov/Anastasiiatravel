@@ -7,13 +7,15 @@ import styles from '../styles/cinzel.module.css';
 const Trip = () => {
   return (
     <div
-            className='h-[500px] w-[800px] hover:opacity-90 duration-300 rounded-2xl border-4 border-[#408692]'
+            className='max-h-[500px] max-w-[800px] hover:opacity-90 duration-300 rounded-2xl mx-2 border-4 border-[#408692]'
+            >
+            <div
             >
                 <Image
-                className='h-[500px] w-[800px] overflow-hidden rounded-2xl'
+                className='xs:h-[350px] xs:w-[300px] md:h-[492px] md:w-[792px] overflow-hidden rounded-2xl'
                 src={tour} alt="tour"/>
                 <div
-                className='bg-black backdrop-blur-xl z-10 -mt-[24%] rounded-b-2xl relative bottom-0 opacity-70'
+                className='bg-black backdrop-blur-xl z-10 xs:-mt-[72%] md:-mt-[35%] mdl:-mt-[24%] rounded-b-2xl relative bottom-0 opacity-70 max-h-[500px] max-w-[800px]'
                 >
                     <div
                     className='z-20'
@@ -32,7 +34,7 @@ const Trip = () => {
                         className='mt-2 flex flex-col justify-center text-sm'
                         >
                             <div
-                            className='flex gap-5 justify-center text-base'
+                            className='xs:flex-col mdl:flex-row xs:gap-2 flex md:gap-5 justify-center text-base'
                             >
                                 <div
                                 className='flex justify-center gap-1'
@@ -66,7 +68,7 @@ const Trip = () => {
                             </div>
                         </div>
                     </div>
-                    
+                    </div>
                 </div>
             </div>
   )

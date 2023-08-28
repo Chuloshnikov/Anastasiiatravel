@@ -11,22 +11,22 @@ import Link from 'next/link';
 const AboutUs = () => {
   return (
     <div 
-    className='z-20 bg-gray-100 text-center pt-24 pb-24'
+    className='z-20 bg-gray-100 text-center md:pt-24 md:pb-24 xs:pt-6 xs:pb-12'
     >
         <h2
-        className={`${styles.cinzelFont} font-base tracking-widest text-[62px] text-yellow-900 mb-24`}
+        className={`${styles.cinzelFont} font-base tracking-widest xs:text-[32px] md:text-[44px] xl:text-[62px] text-yellow-900 xs:mb-12 mb-24`}
         >
             ПРО НАС
         </h2>
         <div>
             <div
-            className='border-2 border-yellow-500 rounded-2xl flex gap-5 mx-40'
+            className='border-2 border-yellow-500 rounded-2xl xs:flex-col xl:flex-row flex gap-5 xs:mx-5 mdl:mx-40'
             >
                 <div
-                className=' flex w-[50%] p-14'
+                className=' flex xs:w-full xl:w-[50%] xs:p-4 lg:p-14 xs:text-center xs:justify-center'
                 >
                     <p
-                    className={`${styles.cinzelFont} font-normal tracking-widest text-2xl text-yellow-900`}
+                    className={`${styles.cinzelFont} font-normal tracking-widest xs:text-sm md:text-lg xl:text-2xl text-yellow-900`}
                     >
                         Ми організовуєм незабутні тури для невеликих груп. Відвідай обов'язкові місця та відкрий для себе наші унікальні локації.
                         "Anastasiia Travel" - це авторські, групові та комфортні тури. Ми ретельно плануємо кожну подорож, надаючи зручний графік та професійних гідів.
@@ -36,10 +36,10 @@ const AboutUs = () => {
                     </p>
                 </div>
                 <div
-                className='flex justify-end w-[50%] gap-10 p-14'
+                className='flex justify-end xs:w-full xs:justify-center xl:w-[50%] gap-10 xs:mb-4 mdl:mb-0 xs:p-4 mdl:p-14'
                 >
                     <div
-                    className='flex flex-col gap-5'
+                    className='flex flex-col xs:hidden lgl:flex gap-5'
                     >
                         <div
                         className='pt-4'
@@ -59,7 +59,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div
-                    className='flex flex-col gap-14'
+                    className='flex flex-col xs:gap-5 mdl:gap-14'
                     >
                         <Image 
                         className='w-[400px] rounded-2xl'
@@ -69,7 +69,7 @@ const AboutUs = () => {
                         className=''
                         >
                             <Link 
-                            className='text-yellow-500 px-8 p-8 border-2 border-yellow-500 rounded-2xl hover:border-[#408692] hover:text-[#408692] duration-300'
+                            className='text-yellow-500 xs:p-4 mdl:p-8 xs:text-xs mdl:text-lg border-2 border-yellow-500 rounded-2xl hover:border-[#408692] hover:text-[#408692] duration-300'
                             href="/"
                             >
                                 БІЛЬШЕ ПРО НАС
