@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../assets/icons/logo.webp';
+import HamburgerMenu from './HamburgerMenu';
 
 const Navbar = () => {
 
@@ -54,6 +55,7 @@ const Navbar = () => {
         </div>
       </Link>
       <nav
+      className='xs:hodden md:inline'
       >
         <ul 
          className={`z-50 xs:hidden lg:flex gap-6 leading-3 px-8 py-8 font-semibold 
@@ -106,6 +108,14 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+      <div
+      className='md:hidden'
+      >
+        
+        <nav>
+
+        </nav>
+      </div>
     </header>
   )
 }
