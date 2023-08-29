@@ -15,6 +15,7 @@ const AboutUs = () => {
     >
         <h2
         className={`${styles.cinzelFont} font-base tracking-widest xs:text-[32px] md:text-[44px] xl:text-[62px] text-yellow-900 xs:mb-12 mb-24`}
+        id='about'
         >
             ПРО НАС
         </h2>

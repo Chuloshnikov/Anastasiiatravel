@@ -62,7 +62,7 @@ const Navbar = () => {
       className='xs:hodden md:inline'
       >
         <ul 
-         className={`z-50 xs:hidden lg:flex gap-6 leading-3 px-8 py-8 font-semibold 
+         className={`z-50 xs:hidden lg:flex gap-6 leading-3 px-8 py-8 font-semibold
          text-base tracking-widest ${shouldShowBackground ? 'border-2 border-yellow-500 rounded-2xl' : ''}`}
          >
           <li>
@@ -77,7 +77,7 @@ const Navbar = () => {
           <li>
             <Link 
             className="text-underline-animation text-underline-center hover:text-underline-center-hover"
-            href="/"
+            href='#about'
             rel="noopener noreferrer"
             >
               ПРО НАС
@@ -136,18 +136,17 @@ const Navbar = () => {
             className=' bg-[#408692] w-[300px] h-[400px] p-8 absolute right-5 top-5 flex flex-col gap-5 opacity-80'
             >
               <li>
-                <Link 
+                <Link
                     className="text-underline-animation text-underline-left hover:text-underline-left-hover"
-                    href="/"
                     rel="noopener noreferrer"
                   >
                     ПОДОРОЖІ
               </Link>
           </li>
               <li>
-                <Link 
+                <Link
                     className="text-underline-animation text-underline-center hover:text-underline-center-hover"
-                    href="/"
+                    href='#about'
                     rel="noopener noreferrer"
                     >
                     ПРО НАС
