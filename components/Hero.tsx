@@ -22,9 +22,9 @@ const Hero = () => {
             <Link 
               className='absolute z-10 xs:top-[15%] md:top-[38%] mdl:top-[35%] lg:top-[52%] xs:text-lg mdl:text-4xl tracking-tight font-normal 
               xs:px-4 mdl:px-8 xs:py-2 mdl:py-4 border-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300 rounded-2xl'
-              href="/"
+              href="/travels"
             >
-           календар турів
+           до подорожей
           </Link>
         </div>
         

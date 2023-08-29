@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Head>
         <title>Anastasiia Travel</title>
-        <meta name="description" content="The best pizza in this corner of the Earch" />
+        <meta name="description" content="Твоя незабутня подорож" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="favicon.ico" />
       </Head>

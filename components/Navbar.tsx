@@ -6,11 +6,13 @@ import logo from '../assets/icons/logo.webp';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AiOutlinePhone } from 'react-icons/ai';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
 
   const [scrollY, setScrollY] = useState(0);
   const [openMenu, setOpenMenu] = useState(false);
+  const router = useRouter();
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
@@ -29,7 +31,12 @@ const Navbar = () => {
   
   const toogleMenu = () => {
     setOpenMenu(!openMenu);
+
   }
+
+ 
+
+
 
 
   return (
@@ -69,20 +76,33 @@ const Navbar = () => {
           <li>
             <Link 
             className="text-underline-animation text-underline-left hover:text-underline-left-hover"
-            href="/"
+            href="/travels"
             rel="noopener noreferrer"
             >
               ПОДОРОЖІ
             </Link>
           </li>
           <li>
-            <Link 
-            className="text-underline-animation text-underline-center hover:text-underline-center-hover"
-            href='#about'
+            {router.pathname !== '/'  ? (
+            <Link
+                  className="text-underline-animation text-underline-center hover:text-underline-center-hover"
+                  href='/#about'
             rel="noopener noreferrer"
+            
             >
               ПРО НАС
             </Link>
+            ) : (
+              <Link 
+                  className="text-underline-animation text-underline-center hover:text-underline-center-hover"
+                  href='#about'
+                  rel="noopener noreferrer"
+            >
+              ПРО НАС
+            </Link>
+            )
+          }
+            
           </li>
           <li>
             <Link 
@@ -139,6 +159,7 @@ const Navbar = () => {
               <li>
                 <Link
                     className="text-underline-animation text-underline-left hover:text-underline-left-hover"
+                    href="/travels"
                     rel="noopener noreferrer"
                   >
                     ПОДОРОЖІ
