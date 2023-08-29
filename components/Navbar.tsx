@@ -5,6 +5,7 @@ import Link from 'next/link';
 import logo from '../assets/icons/logo.webp';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { motion, AnimatePresence } from 'framer-motion';
+import { AiOutlinePhone } from 'react-icons/ai';
 
 const Navbar = () => {
 
@@ -185,6 +186,17 @@ const Navbar = () => {
       </AnimatePresence>
         
       </div>
+      {/*phone button*/}
+      <a className='xs:block absolute xs:top-[520%] xs:right-[10%] xl:top-[550%] xl:right-[20%]' href="tel:+38-093-996-10-87">
+                  <motion.div
+                    initial={{ rotate: 0, scale: 1 }} 
+                    animate={{ rotate: [0, 30, -30, 0], scale: 1.1 }}
+                    transition={{repeat: Infinity, duration: 0.8}}
+                    className="p-1 rounded-full bg-[#408692] shadow-lg"
+                    >
+                      <AiOutlinePhone className='w-11 h-11 text-white'/>
+                  </motion.div>
+                  </a>
     </header>
   )
 }
