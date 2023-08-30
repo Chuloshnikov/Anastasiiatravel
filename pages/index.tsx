@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import MeinGalery from '@/components/MeinGalery';
 import SocialPages from '@/components/SocialPages';
 import SpecialAbout from '@/components/SpecialAbout';
+import Testimonials from '@/components/Testimonials';
 import UpcomingTrips from '@/components/UpcomingTrips';
 import Head from 'next/head';
 
@@ -28,6 +29,7 @@ export default function Home() {
           <SocialPages/>
           <MeinGalery/>
           <SpecialAbout/>
+          <Testimonials/>
           <ContactWithUs/>
       </main>
     </>
