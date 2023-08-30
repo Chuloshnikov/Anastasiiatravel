@@ -16,7 +16,7 @@ const Travel = () => {
             <Image 
                 src={tour} 
                 alt="tourpic" 
-                className='overflow-hidden lgl:rounded-l-lg'
+                className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg'
                 />
         </div>
         <div

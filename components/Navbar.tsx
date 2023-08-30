@@ -130,7 +130,7 @@ const Navbar = () => {
             href="/"
             rel="noopener noreferrer"
             >
-              КОНТАКТИ
+              ГАЛЕРЕЯ
             </Link>
           </li>
           <li>
@@ -139,7 +139,7 @@ const Navbar = () => {
             href="/"
             rel="noopener noreferrer"
             >
-              ІНФО
+              FAQ
             </Link>
           </li>
         </ul>
