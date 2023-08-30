@@ -7,7 +7,7 @@ import { AiFillInstagram } from 'react-icons/ai';
 const Footer = () => {
   return (
     <footer
-    className='mx-8 mt-24 pb-6 flex justify-between'
+    className='bg-[#408692] px-8 pt-24 pb-6 flex justify-between'
     >
       <div
       className='flex items-center justify-center xs:ml-0 mdl:ml-20 xs:text-sm mdl:text-lg'

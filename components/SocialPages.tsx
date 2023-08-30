@@ -5,7 +5,7 @@ import styles from '../styles/cinzel.module.css';
 const SocialPages = () => {
   return (
     <div
-    className='text-center xs:pt-12 mdl:pt-24 pb-12'
+    className='bg-[#408692] text-center xs:pt-12 mdl:pt-24 pb-12'
     >
         <h2
         className={`${styles.cinzelFont} font-base tracking-widest xs:text-[32px] md:text-[44px] xl:text-[62px] text-yellow-500 mb-8`}
