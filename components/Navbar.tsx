@@ -102,16 +102,27 @@ const Navbar = () => {
             </Link>
             )
           }
-            
           </li>
           <li>
-            <Link 
-            className="text-underline-animation text-underline-right hover:text-underline-right-hover"
-            href="/"
+          {router.pathname !== '/'  ? (
+            <Link
+                  className="text-underline-animation text-underline-center hover:text-underline-center-hover"
+                  href='/#testimonials'
             rel="noopener noreferrer"
+            
             >
               ВІДГУКИ
             </Link>
+            ) : (
+              <Link 
+                  className="text-underline-animation text-underline-center hover:text-underline-center-hover"
+                  href='#testimonials'
+                  rel="noopener noreferrer"
+            >
+              ВІДГУКИ
+            </Link>
+            )
+          }
           </li>
           <li>
             <Link 

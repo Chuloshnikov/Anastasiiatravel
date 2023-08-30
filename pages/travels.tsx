@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
+import TravelsPage from '@/components/travels/TravelsPage';
 
-export default function travels() {
+export default function Travels() {
   return (
     <>
       <Head>
@@ -12,8 +13,10 @@ export default function travels() {
       </Head>
         <div className='text-white mx-auto'>
         </div>
-      <main>
-          hola
+      <main
+      className='bg-[#749CBA] w-full h-full'
+      >
+          <TravelsPage/>
       </main>
     </>
   )
