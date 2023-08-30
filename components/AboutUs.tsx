@@ -11,11 +11,11 @@ import Link from 'next/link';
 const AboutUs = () => {
   return (
     <div 
-    className='z-20 bg-gray-100 text-center md:pt-24 md:pb-24 xs:pt-6 xs:pb-12'
+    className='z-20 bg-gray-100 text-center md:pt-22 md:pb-22 xs:pt-6 xs:pb-12'
+    id='about'
     >
         <h2
         className={`${styles.cinzelFont} font-base tracking-widest xs:text-[32px] md:text-[44px] xl:text-[62px] text-yellow-900 xs:mb-12 mb-24`}
-        id='about'
         >
             ПРО НАС
         </h2>
