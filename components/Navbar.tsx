@@ -186,15 +186,6 @@ const Navbar = () => {
                 </Link>
           </li>
               <li>
-                <Link 
-                    className="text-underline-animation left hover:left-hover"
-                    href="/"
-                    rel="noopener noreferrer"
-                  >
-                    КОНТАКТИ
-                </Link>
-              </li>
-              <li>
                 <Link
                     className="text-underline-animation left hover:left-hover" 
                     href="/"
