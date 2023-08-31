@@ -2,8 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import tour from '../../assets/images/tour1.webp';
 import styles from '../../styles/cinzel.module.css';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Travel = () => {
+
+    const router = useRouter();
+
   return (
     <div
     className='max-w-[1200px] text-yellow-900 bg-gray-100 
@@ -18,6 +23,27 @@ const Travel = () => {
                 alt="tourpic" 
                 className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg'
                 />
+              {router.pathname !== '/'  ? (
+            <Link
+                className='absolute -mt-20 ml-[19%] z-10 tracking-tight font-normal text-white
+                border-2 p-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300 rounded-2xl'
+                  href='/#contactform'
+            rel="noopener noreferrer"
+            
+            >
+              Забронювати
+            </Link>
+            ) : (
+              <Link 
+                className='absolute -mt-20 ml-[19%] z-10 tracking-tight font-normal text-white
+                 border-2 p-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300 rounded-2xl'
+                  href='#contactform'
+                  rel="noopener noreferrer"
+            >
+              Забронювати
+            </Link>
+            )
+          }
         </div>
         <div
             className='xs:w-full xl:w-[30%] p-2 flex flex-col gap-2'

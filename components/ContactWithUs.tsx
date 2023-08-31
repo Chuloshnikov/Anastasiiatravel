@@ -23,6 +23,7 @@ const ContactWithUs = () => {
   return (
     <div
     className='bg-gray-100 xs:pt-12 mdl:pt-24 xs:pb-6 mdl:pb-12 text-center'
+    id='contactform'
     >
         <h2
         className={`${styles.cinzelFont} font-base tracking-widest xs:text-[22px] md:text-[44px] xl:text-[68px] text-yellow-500 mb-2`}
