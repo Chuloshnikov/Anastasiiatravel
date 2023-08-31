@@ -125,15 +125,6 @@ const Navbar = () => {
           }
           </li>
           <li>
-            <Link 
-            className="text-underline-animation left hover:left-hover"
-            href="/"
-            rel="noopener noreferrer"
-            >
-              ГАЛЕРЕЯ
-            </Link>
-          </li>
-          <li>
             <Link
             className="text-underline-animation left hover:left-hover" 
             href="/"
