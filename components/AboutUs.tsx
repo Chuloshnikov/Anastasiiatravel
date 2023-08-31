@@ -71,7 +71,7 @@ const AboutUs = () => {
                         >
                             <Link 
                             className='text-yellow-500 xs:p-4 mdl:p-8 xs:text-xs mdl:text-lg border-2 border-yellow-500 rounded-2xl hover:border-[#408692] hover:text-[#408692] duration-300'
-                            href="/"
+                            href="/moreaboutus"
                             >
                                 БІЛЬШЕ ПРО НАС
                             </Link>
