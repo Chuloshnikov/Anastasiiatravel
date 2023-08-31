@@ -15,18 +15,20 @@ const MoreAboutUsPage = () => {
         className='flex flex-col gap-10 pt-[12%] pb-[10%]'
         >
           <div
-          className='max-w-[1200px] mx-auto text-yellow-900 bg-gray-100 
+          className='max-w-[1200px] xs:mx-2 mdl:mx-auto text-yellow-900 bg-gray-100 
           hover:opacity-90 duration-300 rounded-xl mx-2 border-4 border-[#408692]
-          flex xs:flex-col xl:flex-row'
+          flex xs:flex-col mdl:flex-row'
           >
-            <div>
+            <div
+            className='flex xs:items-center xs:justify-center'
+            >
               <Image 
               className='max-w-[300px] overflow-hidden xs:rounded-t-lg xl:rounded-l-lg'
               src={alina}
               />
             </div>
             <div
-            className='p-4 flex flex-col gap-2'
+            className='p-4 flex flex-col gap-2 xs:text-center xs:items-center'
             >
                 <h3
                 className={`${styles.cinzelFont} font-semibold text-[22px] text-yellow-500`}
@@ -34,7 +36,7 @@ const MoreAboutUsPage = () => {
                   Аліна
                 </h3>
                 <p
-                className='text-base font-semibold'
+                className='text-base font-semibold xs:text-center xs:items-center'
                 >
                   Кожна з нас відчуває неабияке захоплення від подорожей
                   Нашою ціллю є ділитися емоціями та враженнями 
@@ -65,18 +67,20 @@ const MoreAboutUsPage = () => {
             </div>
           </div>
           <div
-          className='max-w-[1200px] mx-auto text-yellow-900 bg-gray-100 
+          className='max-w-[1200px] xs:mx-2 mdl:mx-auto text-yellow-900 bg-gray-100 
           hover:opacity-90 duration-300 rounded-xl mx-2 border-4 border-[#408692]
-          flex xs:flex-col xl:flex-row gap-5'
+          flex xs:flex-col mdl:flex-row gap-5'
           >
-            <div>
+            <div
+            className='flex xs:items-center xs:justify-center mdl:justify-start mdl:items-start'
+            >
               <Image 
               className='max-w-[300px] overflow-hidden xs:rounded-t-lg xl:rounded-l-lg'
               src={anastasiia}
               />
             </div>
             <div
-            className='p-4 flex flex-col gap-2'
+            className='p-4 flex flex-col gap-2 xs:text-center xs:items-center'
             >
                 <h3
                 className={`${styles.cinzelFont} font-semibold text-[22px] text-yellow-500`}
