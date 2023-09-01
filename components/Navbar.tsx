@@ -127,7 +127,7 @@ const Navbar = () => {
           <li>
             <Link
             className="text-underline-animation left hover:left-hover" 
-            href="/"
+            href="/faq"
             rel="noopener noreferrer"
             >
               FAQ
@@ -188,10 +188,10 @@ const Navbar = () => {
               <li>
                 <Link
                     className="text-underline-animation left hover:left-hover" 
-                    href="/"
+                    href="/faq"
                     rel="noopener noreferrer"
                   >
-                    ІНФО
+                    FAQ
                 </Link>
               </li>
             </ul>
