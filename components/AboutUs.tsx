@@ -48,7 +48,7 @@ const AboutUs = () => {
                         <Image
                             className='w-[200px] rounded-2xl'
                             src={one}
-                            
+                            alt='imageOne'
                             />
                         </div>
                         <div
@@ -56,6 +56,7 @@ const AboutUs = () => {
                             <Image
                                 className='w-[200px] rounded-2xl'
                                 src={two}
+                                alt='imageTwo'
                                 />
                         </div>
                     </div>
@@ -65,6 +66,7 @@ const AboutUs = () => {
                         <Image 
                         className='w-[400px] rounded-2xl'
                         src={withWine}
+                        alt='imageThree'
                         />
                         <div
                         className=''
