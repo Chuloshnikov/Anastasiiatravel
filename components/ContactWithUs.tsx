@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, FormEvent } from 'react';
 import styles from '../styles/cinzel.module.css';
 
 import emailjs from '@emailjs/browser';
@@ -7,7 +7,7 @@ const ContactWithUs = () => {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
     emailjs.sendForm('service_nsgwksa', 'template_ne8ic1j', form.current, '5slQGibGo721XLdVU')
