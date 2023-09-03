@@ -54,7 +54,7 @@ const Admin = () => {
   }
 
   return (
-    <div className='bg-white flex max-w-contentContainer mx-auto'>
+    <div className='bg-[#749CBA] flex w-full mx-auto'>
         <AdminLayout>
             <AdminDashboard/>
         </AdminLayout>
