@@ -4,72 +4,74 @@ import tour from '../assets/images/tour1.webp';
 import Link from 'next/link';
 import styles from '../styles/cinzel.module.css';
 
-const Trip = () => {
+const Trip = ({travel}) => {
   return (
     <div
-            className='max-h-[500px] max-w-[800px] hover:opacity-90 duration-300 rounded-2xl mx-2 border-4 border-[#408692]'
-            >
-            <div
-            >
-                <Image
-                className='xs:h-[350px] xs:w-[300px] md:h-[492px] md:w-[792px] overflow-hidden rounded-2xl'
-                src={tour} alt="tour"/>
+        className='max-h-[500px] max-w-[800px] hover:opacity-90 duration-300 rounded-2xl mx-2 border-4 border-[#408692]'
+        >
                 <div
-                className='bg-black backdrop-blur-xl z-10 xs:-mt-[72%] md:-mt-[35%] mdl:-mt-[24%] rounded-b-2xl relative bottom-0 opacity-70 max-h-[500px] max-w-[800px]'
                 >
+                    <img
+                    className='xs:h-[350px] xs:w-[300px] md:h-[492px] md:w-[792px] overflow-hidden rounded-2xl'
+                    src={travel.img} alt="tour"
+                    alt="travelpic"
+                    />
                     <div
-                    className='z-20'
+                    className='bg-black backdrop-blur-xl z-10 xs:-mt-[72%] md:-mt-[35%] mdl:-mt-[24%] rounded-b-2xl relative bottom-0 opacity-70 max-h-[500px] max-w-[800px]'
                     >
-                        <h3
-                            className={`${styles.cinzelFont} font-semibold text-[32px] text-yellow-500 mb-2`}
-                            >
-                                Мaдейра
-                        </h3>
-                        <p
-                        className='font-semibold text-xl'
-                        >
-                            Магія Португалії
-                        </p>
                         <div
-                        className='mt-2 flex flex-col justify-center text-sm'
+                        className='z-20'
                         >
+                            <h3
+                                className={`${styles.cinzelFont} font-semibold text-[32px] text-yellow-500 mb-2`}
+                                >
+                                    {travel.title}
+                            </h3>
+                            <p
+                            className='font-semibold text-xl'
+                            >
+                                {travel.subTitle}
+                            </p>
                             <div
-                            className='xs:flex-col mdl:flex-row xs:gap-2 flex md:gap-5 justify-center text-base'
+                            className='mt-2 flex flex-col justify-center text-sm'
                             >
                                 <div
-                                className='flex justify-center gap-1'
+                                className='xs:flex-col mdl:flex-row xs:gap-2 flex md:gap-5 justify-center text-base'
                                 >
-                                    <p
-                                    className='line-through'
-                                    >
-                                        1500$
-                                    </p>
                                     <div
-                                    className='flex gap-1 text-yellow-500 font-bold'
+                                    className='flex justify-center gap-1'
                                     >
-                                        <p>1299$</p>
-                                        <p>останнє місце</p>
+                                        <p
+                                        className='line-through'
+                                        >
+                                            {travel.oldPrice && `${travel.oldPrice}$`}
+                                        </p>
+                                        <div
+                                        className='flex gap-1 text-yellow-500 font-bold'
+                                        >
+                                            <p>{travel.price}$</p>
+                                            <p>{travel.priceNote && `${travel.priceNote}`}</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        {travel.eventDate}
                                     </div>
                                 </div>
-                                
-                                <div>
-                                    з 15 серпня до 31 серпня
+                                <div
+                                className='my-6'
+                                >
+                                    <Link 
+                                        className=' px-4 py-2 border-2 hover:text-yellow-500 hover:border-yellow-500 duration-300 text-base rounded-lg'
+                                        href="/"
+                                        >
+                                        Деталі
+                                    </Link>
                                 </div>
                             </div>
-                            <div
-                            className='my-6'
-                            >
-                                <Link 
-                                    className=' px-4 py-2 border-2 hover:text-yellow-500 hover:border-yellow-500 duration-300 text-base rounded-lg'
-                                    href="/"
-                                    >
-                                    Деталі
-                                </Link>
-                            </div>
+                        </div>
                         </div>
                     </div>
-                    </div>
-                </div>
             </div>
   )
 }
