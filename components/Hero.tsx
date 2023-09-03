@@ -27,10 +27,12 @@ const Hero = () => {
            до подорожей
           </Link>
         </div>
-        
         <Image
         className='h-[100%] brightness-50'
-        src={hero}/>
+        src={hero}
+        alt="heropic"
+        priority="true"
+        />
     </div>
   )
 }
