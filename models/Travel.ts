@@ -20,10 +20,10 @@ const TravelSchema = new mongoose.Schema ({
     },
     oldPrice: {
         type: Number, required: false,
-    }
+    },
     priceNote: {
         type: String, required: false,
-    }
+    },
     eventDate: {
         type: String, required: true,
     },
