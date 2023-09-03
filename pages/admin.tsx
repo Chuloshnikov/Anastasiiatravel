@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, FormEvent } from 'react';
 import { useSession, signIn } from "next-auth/react";
 import AdminLayout from '@/components/admin/AdminLayout';
 import AdminDashboard from '@/components/admin/AdminDashboard';
@@ -11,7 +11,7 @@ const Admin = () => {
   console.log(session);
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     signIn('credentials', { username, password});
 }
@@ -54,7 +54,7 @@ const Admin = () => {
   }
 
   return (
-    <div className='bg-[#749CBA] flex w-full mx-auto'>
+    <div className='bg-[#749CBA] flex h-screen w-full mx-auto'>
         <AdminLayout>
             <AdminDashboard/>
         </AdminLayout>
