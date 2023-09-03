@@ -9,7 +9,7 @@ const TravelSchema = new mongoose.Schema ({
     title: {
         type: String, required: true, 
     },
-    subtitle: {
+    subTitle: {
         type: String, required: true,
     },
     description: {
@@ -20,6 +20,9 @@ const TravelSchema = new mongoose.Schema ({
     },
     oldPrice: {
         type: Number, required: false,
+    }
+    priceNote: {
+        type: String, required: false,
     }
     eventDate: {
         type: String, required: true,
