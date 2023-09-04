@@ -5,7 +5,7 @@ import styles from '../../styles/cinzel.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-const Travel = () => {
+const Travel = ({ travel }) => {
 
     const router = useRouter();
 
@@ -18,10 +18,11 @@ const Travel = () => {
         <div
         className='xs:w-full xl:w-[70%]'
         >
-            <Image 
-                src={tour} 
+            <img 
+                src={travel.img} 
                 alt="tourpic" 
-                className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg'
+                className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg w-full h-full'
+                objectFit="contain"
                 />
               {router.pathname !== '/'  ? (
             <Link
@@ -51,25 +52,17 @@ const Travel = () => {
             <h3
                 className={`${styles.cinzelFont} font-semibold text-[22px] text-yellow-500`}
                 >
-                Мадейра
+                {travel.title}
             </h3>
             <p
                 className='font-semibold text-xl'
                 >
-                Магія Португалії
+                {travel.subTitle}
             </p>
             <p
                 className='text-sm font-semibold'
                 >
-                Тур до Мадейри – це захоплююча подорож на західний атлантичний острів, 
-                відомий своєю природною красою та унікальною атмосферою. 
-                Під час цього туру ви зможете насолодитися вражаючими горами, 
-                ласкавим кліматом та захоплюючими виглядами на океан. 
-                Відвідайте традиційні міста та села, де ви зможете скуштувати місцеву кухню та 
-                познайомитися з гостинними місцевими жителями. Екскурсії до винних підприємств 
-                дозволять вам насолодитися видатними мадейрськими винами. 
-                Чи ви любите активний відпочинок? Тоді ви оціните можливість підкорити трекінгові 
-                маршрути і спробувати екстремальні види спорту.
+                {travel.description}
             </p>
             <div
                 className='flex flex-col gap-5 text-base mt-4'
@@ -80,20 +73,20 @@ const Travel = () => {
                     <p
                         className='line-through font-semibold'
                         >
-                        1500$
+                        {travel.oldPrice && travel.oldPrice}$
                     </p>
                     <div
                         className='flex gap-1 text-yellow-500 font-bold'
                         >
-                        <p>1299$</p>
-                        <p>останнє місце</p>
+                        <p>{travel.price}$</p>
+                        <p>{travel.priceNote && travel.priceNote}</p>
                     </div>
                 </div>
                 <div
                     className='font-normal text-center'
                     >
                     <p>
-                        з 15 серпня до 31 серпня
+                        {travel.eventDate}
                     </p>
                 </div>
             </div>
