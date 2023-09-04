@@ -52,11 +52,11 @@ const TravelForm: React.FC<TravelFormProps> = ({
 
     const handleCreate = async (e: FormEvent<HTMLFormElement>) => {
             e.preventDefault();
-            const eventData: Data = { img, title, subTitle, eventDate, description, price, oldPrice, priceNote };    
+            const travelData: Data = { img, title, subTitle, eventDate, description, price, oldPrice, priceNote };    
             if (_id) {
-              await axios.put("/api/eventdata", {...eventData, _id});
+              await axios.put("/api/travelsdata", {...travelData, _id});
             } else {
-              await axios.post("/api/eventdata", eventData);
+              await axios.post("/api/travelsdata", travelData);
             }
             setGoToTravels(true); 
     };
@@ -100,60 +100,94 @@ const TravelForm: React.FC<TravelFormProps> = ({
             <form onSubmit={handleCreate} className="flex flex-col max-w-[500px] mx-auto">
                 <label>Вибери зображення</label>
                     <input type="file" onChange={handleFileChange} />
-                <label>Заголовок</label>
+                <label
+                className='font-semibold'
+                >
+                  Заголовок
+                </label>
                     <input
-                    className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
+                    className="border-none focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                     type="text"
                     placeholder="Заголовок..."
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
+                    required
                     />
-                <label>Підзаголовок</label>
+                <label
+                className='font-semibold'
+                >
+                  Підзаголовок
+                </label>
                     <input
-                    className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
+                    className="border-none focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                     type="text"
                     placeholder="Підзаголовок..."
                     value={subTitle}
                     onChange={(e) => setSubTitle(e.target.value)}
+                    required
                     />
-                <label>Дата відпочинку</label>
+                <label
+                className='font-semibold'
+                >
+                  Дата відпочинку
+                </label>
                     <input
-                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
+                        className="border-none focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                         type="text"
                         placeholder="Дата проведення..."
                         value={eventDate}
                         onChange={(e) => setEventDate(e.target.value)}
+                        required
                     />
-                <label>Опис</label>
+                <label
+                className='font-semibold'
+                >
+                  Опис
+                </label>
                     <textarea
-                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
+                        className="border-none focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                         placeholder="Опис..."
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
+                        required
                 />
-                 <label>Ціна</label>
+                <label
+                  className='font-semibold'
+                  >
+                  Ціна
+                </label>
                     <input
-                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
+                        className="border-none focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                         type="number"
                         value={price}
                         onChange={(e) => setPrice(e.target.value)}
+                        required
                     />
-                    <label>Стара ціна (не обов&quot;язково)</label>
+                    <label
+                      className='font-semibold'
+                      >
+                      Стара ціна (не обов&quot;язково)
+                    </label>
                     <input
-                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
+                        className="border-none focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                         type="number"
                         value={oldPrice}
                         onChange={(e) => setOldPrice(e.target.value)}
                     />
-                    <label>Підпис під ціною (не обов&quot;язково)</label>
+                    <label
+                      className='font-semibold'
+                      >
+                      Підпис під ціною (не обов&quot;язково)
+                    </label>
                     <input
-                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
-                        type="number"
+                        className="border-none focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
+                        type="text"
                         value={priceNote}
+                        placeholder="Підпис під ціною..."
                         onChange={(e) => setPriceNote(e.target.value)}
                     />
             <button
-                className="bg-[#408692] text-white p-1 px-2 mt-6 text-base font-semibold hover:bg-[#33707a] duration-300 mt-2 rounded-lg"
+                className="bg-[#408692] text-white py-2 px-2 mt-6 text-base font-semibold hover:bg-[#33707a] duration-300 mt-2 rounded-lg"
                 type="submit"
                 >
                 Create
