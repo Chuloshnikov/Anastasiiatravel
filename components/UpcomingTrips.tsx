@@ -6,18 +6,11 @@ import axios from 'axios';
 
 const UpcomingTrips = () => {
   const [closestTravel, setClosestTravel] = useState<any>([]);
-  console.log(closestTravel);
   useEffect(() => {
     // Отправляем запрос к API
     axios.get('/api/travelsdata')
-      .then((response) => {
-        const sortedData = response.data.sort((a, b) => {
-          return new Date(b.date) - new Date(a.date);
-        });
-
-        const lastItem = sortedData[0];
-
-        setClosestTravel(lastItem);
+      .then(response => {
+        setClosestTravel(response.data);
       })
       .catch((error) => {
         console.error('Ошибка при загрузке данных:', error);
@@ -36,7 +29,7 @@ const UpcomingTrips = () => {
         <div 
           className='flex gap-5 justify-center'
           >
-              <Trip travel={closestTravel}/>
+              <Trip travel={closestTravel[0]}/>
         </div>
     </div>
   )
