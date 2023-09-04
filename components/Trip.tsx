@@ -13,7 +13,7 @@ const Trip = ({travel}) => {
                 >
                     <img
                     className='xs:h-[350px] xs:w-[300px] md:h-[492px] md:w-[792px] overflow-hidden rounded-2xl'
-                    src={travel.img} alt="tour"
+                    src={travel?.img} alt="tour"
                     alt="travelpic"
                     />
                     <div
@@ -25,12 +25,12 @@ const Trip = ({travel}) => {
                             <h3
                                 className={`${styles.cinzelFont} font-semibold text-[32px] text-yellow-500 mb-2`}
                                 >
-                                    {travel.title}
+                                    {travel?.title}
                             </h3>
                             <p
                             className='font-semibold text-xl'
                             >
-                                {travel.subTitle}
+                                {travel?.subTitle}
                             </p>
                             <div
                             className='mt-2 flex flex-col justify-center text-sm'
@@ -44,18 +44,18 @@ const Trip = ({travel}) => {
                                         <p
                                         className='line-through'
                                         >
-                                            {travel.oldPrice && `${travel.oldPrice}$`}
+                                            {travel?.oldPrice && `${travel.oldPrice}$`}
                                         </p>
                                         <div
                                         className='flex gap-1 text-yellow-500 font-bold'
                                         >
-                                            <p>{travel.price}$</p>
-                                            <p>{travel.priceNote && `${travel.priceNote}`}</p>
+                                            <p>{travel?.price}$</p>
+                                            <p>{travel?.priceNote && `${travel.priceNote}`}</p>
                                         </div>
                                     </div>
                                     
                                     <div>
-                                        {travel.eventDate}
+                                        {travel?.eventDate}
                                     </div>
                                 </div>
                                 <div

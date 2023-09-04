@@ -19,7 +19,7 @@ const Travel = ({ travel }) => {
         className='xs:w-full xl:w-[70%]'
         >
             <img 
-                src={travel.img} 
+                src={travel.img && travel.img} 
                 alt="tourpic" 
                 className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg w-full h-full'
                 objectFit="contain"
