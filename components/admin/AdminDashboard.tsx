@@ -41,9 +41,9 @@ const AdminDashboard = () => {
                       <div className=''>
                           <div>
                               <Link 
-                              className='bg-[#408692] text-white py-2 px-2 text-base font-semibold rounded-md
-                              hover:bg-[#33707a] duration-300'
-                              href="/admin/travel/new"
+                                className='bg-[#408692] text-white py-2 px-2 text-base font-semibold rounded-md
+                                hover:bg-[#33707a] duration-300'
+                                href="/admin/travel/new"
                               >
                                   Додати нову подорож
                               </Link>

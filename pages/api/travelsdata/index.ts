@@ -49,14 +49,14 @@ export default async function handler(
   }
 
   if (method === 'PUT') {
-    const { title, subtitle, eventDate, description, img, _id } = req.body;
-    await Event.updateOne({ _id }, { title, subtitle, eventDate, description, img });
+    const { title, subTitle, eventDate, description, img, price, oldPrice, priceNote, _id } = req.body;
+    await Travel.updateOne({ _id }, { title, subTitle, eventDate, description, img, price, oldPrice, priceNote, });
     res.json(true);
   }
 
   if (method === 'DELETE') {
     if (req.query?.id) {
-      await Event.deleteOne({ _id: req.query?.id });
+      await Travel.deleteOne({ _id: req.query?.id });
       res.json(true);
     }
   }
