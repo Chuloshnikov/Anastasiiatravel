@@ -31,7 +31,7 @@ const AdminDashboard = () => {
     className='text-center'
     >
       <h3
-      className='font-bold text-2xl mt-12'
+      className='font-bold text-2xl mt-6'
       >
         Подорожі
       </h3>

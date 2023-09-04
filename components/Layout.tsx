@@ -10,7 +10,7 @@ interface Props{
 const Layout = ({children}: Props) => {
   return (
     <div
-    className="flex flex-col justify-between max-h-screen"
+    className="flex flex-col justify-between max-h-fit"
     >
       <Navbar/>
           {children}

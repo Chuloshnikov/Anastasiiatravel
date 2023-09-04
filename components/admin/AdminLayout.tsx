@@ -5,7 +5,7 @@ import {  FaSignOutAlt } from "react-icons/fa";
 
 const AdminLayout = ({ children } :any ) => {
   return (
-    <div className='mx-auto max-h-screen w-full flex flex-col bg-[#749CBA]'>
+    <div className='mx-auto w-full flex flex-col bg-[#749CBA]'>
         <div className='flex flex-col xs:mt-[30%] mdl:mt-[15%] max-w-[300px] mx-auto'>
             <nav
             

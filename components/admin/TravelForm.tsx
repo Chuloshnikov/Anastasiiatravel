@@ -97,63 +97,63 @@ const TravelForm: React.FC<TravelFormProps> = ({
 
   return (
         <div>
-            <form onSubmit={handleCreate} className="flex flex-col max-w-[400px] mb-12 mx-auto">
+            <form onSubmit={handleCreate} className="flex flex-col max-w-[500px] mx-auto">
                 <label>Вибери зображення</label>
                     <input type="file" onChange={handleFileChange} />
                 <label>Заголовок</label>
                     <input
-                    className="focus:border-yellow-600 focus:border-1 focus:ring-0"
+                    className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                     type="text"
-                    placeholder="Event name..."
+                    placeholder="Заголовок..."
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     />
-                <label>Підпис під заголовком</label>
+                <label>Підзаголовок</label>
                     <input
-                    className="focus:border-yellow-600 focus:border-1 focus:ring-0"
+                    className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                     type="text"
-                    placeholder="Event name..."
+                    placeholder="Підзаголовок..."
                     value={subTitle}
                     onChange={(e) => setSubTitle(e.target.value)}
                     />
                 <label>Дата відпочинку</label>
                     <input
-                        className="focus:border-yellow-600 focus:border-1 focus:ring-0"
+                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                         type="text"
-                        placeholder="Event date..."
+                        placeholder="Дата проведення..."
                         value={eventDate}
                         onChange={(e) => setEventDate(e.target.value)}
                     />
                 <label>Опис</label>
                     <textarea
-                        className="focus:border-yellow-600 focus:border-1 focus:ring-0"
-                        placeholder="Event description..."
+                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
+                        placeholder="Опис..."
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                 />
                  <label>Ціна</label>
                     <input
-                        className="focus:border-yellow-600 focus:border-1 focus:ring-0"
+                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                         type="number"
                         value={price}
                         onChange={(e) => setPrice(e.target.value)}
                     />
                     <label>Стара ціна (не обов&quot;язково)</label>
                     <input
-                        className="focus:border-yellow-600 focus:border-1 focus:ring-0"
+                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                         type="number"
                         value={oldPrice}
                         onChange={(e) => setOldPrice(e.target.value)}
                     />
                     <label>Підпис під ціною (не обов&quot;язково)</label>
                     <input
-                        className="focus:border-yellow-600 focus:border-1 focus:ring-0"
+                        className="focus:border-1 focus:border-[#33707a] focus:ring-0 text-black rounded-lg"
                         type="number"
                         value={priceNote}
                         onChange={(e) => setPriceNote(e.target.value)}
                     />
             <button
-                className="bg-yellow-400 text-white p-1 px-2 text-base font-semibold hover:bg-yellow-500 duration-300 mt-2"
+                className="bg-[#408692] text-white p-1 px-2 mt-6 text-base font-semibold hover:bg-[#33707a] duration-300 mt-2 rounded-lg"
                 type="submit"
                 >
                 Create
