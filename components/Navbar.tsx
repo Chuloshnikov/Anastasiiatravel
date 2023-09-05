@@ -56,14 +56,14 @@ const Navbar = () => {
         <div
         className='-ml-2'
         >
-            <p>
+            <span>
               Anastasiia
-            </p>
-            <p 
+            </span>
+            <span 
             className='text-6xl -mt-4'
             >
               Travel
-            </p>
+            </span>
         </div>
       </Link>
       <nav
