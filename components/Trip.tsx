@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import tour from '../assets/images/tour1.webp';
 import Link from 'next/link';
 import styles from '../styles/cinzel.module.css';
 
