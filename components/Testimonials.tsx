@@ -11,7 +11,7 @@ import test from '../assets/images/testimonials/test1.jpg';
 
 
 
-const Testimonials = () => {
+const Testimonials = ({ testimonials }) => {
   return (
     <div
     className='text-center bg-gray-100 xs:pt-6 mdl:pt-22 md:pb-22 xs:pb-12'
@@ -48,25 +48,16 @@ const Testimonials = () => {
                 modules={[EffectCoverflow, Pagination, Autoplay]}
                 className="mySwiper bg-gray-100 max-h-[700px] rounded-lg"
             >
-                        <SwiperSlide
-                        >
-                            <Image className='
-                            rounded-lg object-contain' 
-                            src={test} alt="sliderImg"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image className='
-                            rounded-lg object-contain' 
-                            src={test} alt="sliderImg"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image className='
-                            rounded-lg object-contain' 
-                            src={test} alt="sliderImg"
-                            />
-                        </SwiperSlide>
+                        {
+                        testimonials?.map(testimonial => (
+                          <SwiperSlide
+                          >
+                              <img className='rounded-lg' 
+                              src={testimonial.img} alt="sliderImg"
+                              />
+                          </SwiperSlide>
+                        ))
+                      }
                 </Swiper>
             </div>
       </div>

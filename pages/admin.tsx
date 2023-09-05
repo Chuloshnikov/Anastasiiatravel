@@ -21,7 +21,7 @@ const Admin = () => {
       <div className='flex bg-[#749CBA] items-center h-screen w-full'>
       <div className='flex flex-col items-center text-center w-full'>
           <div className='border p-5 bg-white'>
-              <h2 className='text-yellow-950 text-bold text-2xl mb-2'>Admin Panel</h2>
+              <h2 className='text-yellow-950 text-bold text-2xl mb-2'>Адмін панель</h2>
               <form onSubmit={handleSubmit} className='flex flex-col gap-2 text-black'>  
               <input 
               onChange={e => setUserName(e.target.value)}
@@ -44,7 +44,7 @@ const Admin = () => {
                   className='bg-[#749CBA] text-white p-1 px-2 text-base font-semibold
                       hover:bg-[#5484a8] duration-300
                       '>
-                      Login
+                      Логін
               </button>
               </form>
           </div>
