@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import AdminLayout from '@/components/admin/AdminLayout';
 import { useRouter } from 'next/router';
 import axios from 'axios';
-import TravelForm from '../../../../components/admin/TravelForm';
+import TestimonialForm from '../../../../components/admin/TestimonialForm';
 import { getSession, useSession } from 'next-auth/react';
 
 const EditTravelPage = () => {
-    const [travelInfo, setTravelInfo] = useState(null);
+    const [testimonialInfo, setTestimonialInfo] = useState(null);
     const { data: session } = useSession();
     const router = useRouter();
     const {id} = router.query;
@@ -14,15 +14,15 @@ const EditTravelPage = () => {
       if (!id) {
         return;
       }
-      axios.get(`/api/travelsdata?id=${id}`).then(response => {
-        setTravelInfo(response.data);
+      axios.get(`/api/testimonialsdata?id=${id}`).then(response => {
+        setTestimonialInfo(response.data);
       })
     }, [id]);
 
     return (
         <AdminLayout>
             <h1 className='my-5 mx-auto text-2xl font-bold text-center'>Редагувати подорож</h1>
-            {travelInfo && <TravelForm {...travelInfo} btn="змінити"/>}
+            {testimonialInfo && <TestimonialForm {...testimonialInfo} btn="змінити"/>}
         
         </AdminLayout>
     )

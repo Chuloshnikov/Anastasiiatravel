@@ -36,7 +36,7 @@ const TravelForm: React.FC<TravelFormProps> = ({
     price: existingPrice,
     oldPrice: existingOldPrice,
     priceNote: existingPriceNote,
-
+    btn
 }) => {
     const [img, setImg] = useState<string>(existingImg || '');
     const [file, setFile] = useState<any>(null);
@@ -190,7 +190,7 @@ const TravelForm: React.FC<TravelFormProps> = ({
                 className="bg-[#408692] text-white py-2 px-2 mt-6 text-base font-semibold hover:bg-[#33707a] duration-300 mt-2 rounded-lg"
                 type="submit"
                 >
-                Create
+                {btn}
             </button>
       </form>
     </div>
