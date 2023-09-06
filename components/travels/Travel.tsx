@@ -13,7 +13,7 @@ const Travel = ({ travel }) => {
     <div
     className='max-w-[1200px] text-yellow-900 bg-gray-100 
     hover:opacity-90 duration-300 rounded-xl mx-2 border-4 border-[#408692]
-    flex xs:flex-col xl:flex-row gap-5'
+    flex xs:flex-col xs:text-center xl:text-start xl:flex-row gap-5'
     >
         <div
         className='xs:w-full xl:w-[70%]'
@@ -25,7 +25,7 @@ const Travel = ({ travel }) => {
                 />
               {router.pathname !== '/'  ? (
             <Link
-                className='absolute -mt-20 ml-[19%] z-10 tracking-tight font-normal text-white
+                className='absolute -mt-20 mdl:-ml-[7%]  xl:ml-[25%] z-10 tracking-tight font-normal text-white
                 border-2 p-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300 rounded-2xl'
                   href='/#contactform'
             rel="noopener noreferrer"
@@ -35,7 +35,7 @@ const Travel = ({ travel }) => {
             </Link>
             ) : (
               <Link 
-                className='absolute -mt-20 ml-[19%] z-10 tracking-tight font-normal text-white
+                className='absolute -mt-20 mdl:-ml-[7%] xl:ml-[25%] z-10 tracking-tight font-normal text-white
                  border-2 p-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300 rounded-2xl'
                   href='#contactform'
                   rel="noopener noreferrer"
