@@ -41,13 +41,20 @@ const MeinGalery = () => {
                     >
                         <Image 
                         className='rounded-2xl w-[300px] hover:scale-150 duration-500'
-                        src={one}/>
+                        src={one}
+                        alt='tourimg'
+                        priority={true}
+                        />
                         <Image 
                         className='rounded-2xl w-[300px] hover:scale-150 duration-500'
-                        src={two}/>
+                        src={two}
+                        alt='tourimg'
+                        />
                         <Image 
                         className='rounded-2xl w-[300px] hover:scale-150 duration-500'
-                        src={three}/>
+                        src={three}
+                        alt='tourimg'
+                        />
                         
                     </div>
                     <div
@@ -55,52 +62,76 @@ const MeinGalery = () => {
                     >
                         <Image 
                             className='rounded-2xl mt-4 w-[300px] hover:scale-150 duration-500'
-                            src={four}/>
+                            src={four}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl mt-2 w-[250px] hover:scale-150 duration-500'
-                            src={five}/>
+                            src={five}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl mt-8 w-[300px] hover:scale-150 duration-500'
-                            src={eighteen}/>
+                            src={eighteen}
+                            alt='tourimg'
+                            />
                     </div>
                     <div
                     className='flex flex-col gap-2 mt-6'
                     >
                         <Image 
                             className='rounded-2xl ml-8 w-[200px] hover:scale-150 duration-500'
-                            src={six}/>
+                            src={six}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl mt-4 w-[300px] hover:scale-150 duration-500'
-                            src={seven}/>
+                            src={seven}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl my-10 w-[400px] hover:scale-150 duration-500'
-                            src={eight}/>
+                            src={eight}
+                            alt='tourimg'
+                            />
                     </div>
                     <div
                     className='flex flex-col gap-2'
                     >
                         <Image 
                             className='rounded-2xl w-[400px] hover:scale-150 duration-500'
-                            src={nine}/>
+                            src={nine}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl ml-8 w-[200px] hover:scale-150 duration-500'
-                            src={ten}/>
+                            src={ten}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl w-[300px] hover:scale-150 duration-500'
-                            src={seventeen}/>
+                            src={seventeen}
+                            alt='tourimg'
+                            />
                     </div>
                     <div
                     className='flex flex-col gap-2 mt-24'
                     >
                         <Image 
                         className='rounded-2xl ml-8 w-[200px] hover:scale-150 duration-500'
-                        src={eleven}/>
+                        src={eleven}
+                        alt='tourimg'
+                        />
                         <Image 
                         className='rounded-2xl w-[400px] hover:scale-150 duration-500'
-                        src={twelve}/>
+                        src={twelve}
+                        alt='tourimg'
+                        />
                         <Image 
                         className='rounded-2xl w-[300px] hover:scale-150 duration-500'
-                        src={thirteen}/>
+                        src={thirteen}
+                        alt='tourimg'
+                        />
                         
                     </div>
                     <div
@@ -108,13 +139,19 @@ const MeinGalery = () => {
                     >
                         <Image 
                             className='rounded-2xl w-[300px] hover:scale-150 duration-500'
-                            src={fourteen}/>
+                            src={fourteen}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl mt-6 w-[300px] hover:scale-150 duration-500'
-                            src={fifteen}/>
+                            src={fifteen}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl mt-4 w-[300px] hover:scale-150 duration-500'
-                            src={sixteen}/>
+                            src={sixteen}
+                            alt='tourimg'
+                            />
                     </div>
                 </div>
             </div>
@@ -123,36 +160,54 @@ const MeinGalery = () => {
             >
                         <Image 
                             className='rounded-2xl w-full'
-                            src={fifteen}/>
+                            src={fifteen}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl w-full'
-                            src={sixteen}/>
+                            src={sixteen}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl w-full'
-                        src={eleven}/>
+                        src={eleven}
+                        alt='tourimg'
+                        />
                         <Image 
                             className='rounded-2xl w-full'
-                        src={thirteen}/>
+                        src={thirteen}
+                        alt='tourimg'
+                        />
                          <Image 
                             className='rounded-2xl w-full'
-                            src={nine}/>
+                            src={nine}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl w-full'
-                            src={ten}/>
+                            src={ten}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl w-full'
-                            src={eight}/>
+                            src={eight}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl w-full'
-                            src={eighteen}/>
+                            src={eighteen}
+                            alt='tourimg'
+                            />
                         <Image 
                             className='rounded-2xl w-full'
-                        src={one}/>
+                        src={one}
+                        alt='tourimg'
+                        />
                         <Image 
                             className='rounded-2xl w-full'
-                        src={three}/>
-                        
-                        
+                        src={three}
+                        alt='tourimg'
+                        />
             </div>
         </div>
     </div>

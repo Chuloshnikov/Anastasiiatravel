@@ -23,7 +23,12 @@ const TravelsPage = () => {
           <div
           className='flex flex-col gap-10 pt-[12%] pb-[10%]'
           >
-            {travels ? travels?.map(travel => <Travel travel={travel}/>) : (
+            {travels ? travels?.map(travel => 
+            <div
+            key={travel._id}
+            >
+                <Travel travel={travel}/>
+            </div>) : (
               <div
               className='bg-[#749CBA] text-center md:pt-22 md:pb-22 xs:pt-6 xs:pb-12'
               >
