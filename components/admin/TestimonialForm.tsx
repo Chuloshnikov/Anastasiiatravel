@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
+import Spinner from '../Spinner';
 
 type Data = {
     _id: any;
@@ -20,10 +21,17 @@ const TravelForm: React.FC<TravelFormProps> = ({
     const [img, setImg] = useState<string>(existingImg || '');
     const [file, setFile] = useState<any>(null);
     const [goToTravels, setGoToTravels] = useState<boolean>(false);
+    const [isUploading, setIsUploading] = useState(false);
     const router = useRouter();
 
     const handleCreate = async (e: FormEvent<HTMLFormElement>) => {
             e.preventDefault();
+
+            if (!img) {
+              console.error('Image is required');
+              return;
+            }
+
             const testimonialData: Data = { img };    
             if (_id) {
               await axios.put("/api/testimonialsdata", {...testimonialData, _id});
@@ -39,6 +47,7 @@ const TravelForm: React.FC<TravelFormProps> = ({
     }
 
     const handleFileChange = async (e: ChangeEvent<HTMLInputElement>) => {
+        setIsUploading(true);
         if (e.target.files && e.target.files.length > 0) {
           const file = e.target.files[0];
           setFile(file);
@@ -60,6 +69,7 @@ const TravelForm: React.FC<TravelFormProps> = ({
       
             const imageUrl = response.data.secure_url;
             setImg(imageUrl);
+            setIsUploading(false);
           } catch (error) {
             console.log(error);
           }
@@ -72,6 +82,7 @@ const TravelForm: React.FC<TravelFormProps> = ({
             <form onSubmit={handleCreate} className="flex flex-col max-w-[500px] mx-auto mb-40">
                 <label>Вибери зображення</label>
                     <input type="file" onChange={handleFileChange} required/>
+                    {isUploading && <Spinner/>}
                 <button
                     className="bg-[#408692] text-white py-2 px-2 mt-6 text-base font-semibold hover:bg-[#33707a] duration-300 mt-2 rounded-lg"
                     type="submit"

@@ -2,15 +2,18 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/cinzel.module.css';
 import Trip from './Trip';
 import axios from 'axios';
+import Spinner from './Spinner';
 
 
 const UpcomingTrips = () => {
   const [closestTravel, setClosestTravel] = useState<any>([]);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
-    // Отправляем запрос к API
+    setIsLoading(true);
     axios.get('/api/travelsdata')
       .then(response => {
         setClosestTravel(response.data);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.error('Ошибка при загрузке данных:', error);
@@ -29,7 +32,14 @@ const UpcomingTrips = () => {
         <div 
           className='flex gap-5 justify-center'
           >
-              <Trip travel={closestTravel[0]}/>
+              {closestTravel ? (<Trip travel={closestTravel[0]}/>) : (
+                <div
+                className='bg-[#749CBA] text-center md:pt-22 md:pb-22 xs:pt-6 xs:pb-12'
+                >
+                  <Spinner/>
+                </div>
+              )
+            }
         </div>
     </div>
   )
