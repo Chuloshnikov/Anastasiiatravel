@@ -54,7 +54,7 @@ const Navbar = () => {
         className='h-[62px] w-[62px] rounded-full border-4 border-white'
         src={logo} alt="logo"/>
         <div
-        className='-ml-2'
+        className='-ml-2 flex flex-col'
         >
             <span>
               Anastasiia
@@ -106,7 +106,7 @@ const Navbar = () => {
           <li>
           {router.pathname !== '/'  ? (
             <Link
-                  className="text-underline-animation text-underline-center hover:text-underline-center-hover"
+                  className="text-underline-animation text-underline-right hover:text-underline-right-hover"
                   href='/#testimonials'
             rel="noopener noreferrer"
             
@@ -115,7 +115,7 @@ const Navbar = () => {
             </Link>
             ) : (
               <Link 
-                  className="text-underline-animation text-underline-center hover:text-underline-center-hover"
+                  className="text-underline-animation text-underline-right hover:text-underline-right-hover"
                   href='#testimonials'
                   rel="noopener noreferrer"
             >
