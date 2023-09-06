@@ -23,7 +23,6 @@ const ContactWithUs = () => {
   return (
     <div
     className='bg-gray-100 xs:pt-12 mdl:pt-24 xs:pb-6 mdl:pb-12 text-center'
-    id='contactform'
     >
         <h2
         className={`${styles.cinzelFont} font-base tracking-widest xs:text-[22px] md:text-[44px] xl:text-[68px] text-yellow-500 mb-2`}
@@ -83,7 +82,9 @@ const ContactWithUs = () => {
             <option value={0}>По телефону</option>
             <option value={1}>Через месенджер</option>
           </select>
-          <div>
+          <div
+          id='contactform'
+          >
             <button
             className='p-4 border-2 border-yellow-500 text-[#408692] rounded-2xl hover:text-yellow-500 hover:border-[#408692] duration-300'
             type='submit'

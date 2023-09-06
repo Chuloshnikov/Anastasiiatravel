@@ -75,6 +75,15 @@ const Navbar = () => {
          >
           <li>
             <Link 
+              className="text-underline-animation text-underline-left hover:text-underline-left-hover"
+              href="/"
+              rel="noopener noreferrer"
+              >
+              ГОЛОВНА
+            </Link>
+          </li>
+          <li>
+            <Link 
             className="text-underline-animation text-underline-left hover:text-underline-left-hover"
             href="/travels"
             rel="noopener noreferrer"
@@ -158,6 +167,15 @@ const Navbar = () => {
             <ul
             className=' bg-[#408692] w-[300px] h-[400px] p-8 absolute right-5 top-5 flex flex-col gap-5 opacity-80'
             >
+            <li>
+              <Link 
+                className="text-underline-animation text-underline-left hover:text-underline-left-hover"
+                href="/"
+                rel="noopener noreferrer"
+                >
+                ГОЛОВНА
+              </Link>
+            </li>
               <li>
                 <Link
                     className="text-underline-animation text-underline-left hover:text-underline-left-hover"
