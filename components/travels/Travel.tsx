@@ -19,10 +19,9 @@ const Travel = ({ travel }) => {
         className='xs:w-full xl:w-[70%]'
         >
             <img 
-                src={travel.img && travel.img} 
+                src={travel?.img && travel.img} 
                 alt="tourpic" 
                 className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg w-full h-full'
-                objectFit="contain"
                 />
               {router.pathname !== '/'  ? (
             <Link
@@ -52,17 +51,17 @@ const Travel = ({ travel }) => {
             <h3
                 className={`${styles.cinzelFont} font-semibold text-[22px] text-yellow-500`}
                 >
-                {travel.title}
+                {travel?.title}
             </h3>
             <p
                 className='font-semibold text-xl'
                 >
-                {travel.subTitle}
+                {travel?.subTitle}
             </p>
             <p
                 className='text-sm font-semibold'
                 >
-                {travel.description}
+                {travel?.description}
             </p>
             <div
                 className='flex flex-col gap-5 text-base mt-4'
@@ -73,20 +72,20 @@ const Travel = ({ travel }) => {
                     <p
                         className='line-through font-semibold'
                         >
-                        {travel.oldPrice && travel.oldPrice}$
+                        {travel?.oldPrice && travel.oldPrice}$
                     </p>
                     <div
                         className='flex gap-1 text-yellow-500 font-bold'
                         >
-                        <p>{travel.price}$</p>
-                        <p>{travel.priceNote && travel.priceNote}</p>
+                        <p>{travel?.price}$</p>
+                        <p>{travel?.priceNote && travel.priceNote}</p>
                     </div>
                 </div>
                 <div
                     className='font-normal text-center'
                     >
                     <p>
-                        {travel.eventDate}
+                        {travel?.eventDate}
                     </p>
                 </div>
             </div>

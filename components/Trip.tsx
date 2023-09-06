@@ -61,7 +61,7 @@ const Trip = ({travel}) => {
                                 >
                                     <Link 
                                         className=' px-4 py-2 border-2 hover:text-yellow-500 hover:border-yellow-500 duration-300 text-base rounded-lg'
-                                        href="/"
+                                        href={`/travelinfo/${travel?._id}`}
                                         >
                                         Деталі
                                     </Link>

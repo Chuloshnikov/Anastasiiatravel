@@ -51,6 +51,7 @@ const Testimonials = ({ testimonials }) => {
                         {
                         testimonials?.map(testimonial => (
                           <SwiperSlide
+                          key={testimonial._id}
                           >
                               <img className='rounded-lg' 
                               src={testimonial.img} alt="sliderImg"

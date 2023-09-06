@@ -32,14 +32,7 @@ const UpcomingTrips = () => {
         <div 
           className='flex gap-5 justify-center'
           >
-              {closestTravel ? (<Trip travel={closestTravel[0]}/>) : (
-                <div
-                className='bg-[#749CBA] text-center md:pt-22 md:pb-22 xs:pt-6 xs:pb-12'
-                >
-                  <Spinner/>
-                </div>
-              )
-            }
+              <Trip travel={closestTravel[0]}/>
         </div>
     </div>
   )
