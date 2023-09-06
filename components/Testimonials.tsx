@@ -19,7 +19,7 @@ const Testimonials = ({ testimonials }) => {
     
     >
         <h2
-            className={`${styles.cinzelFont} font-base tracking-widest xs:mx-6 xs:text-[32px] md:text-[44px] xl:text-[62px] text-yellow-900 xs:mb-12 mdl:mb-24`}
+            className={`${styles.cinzelFont} font-base tracking-widest xs:mx-6 xs:text-[32px] md:text-[44px] xl:text-[62px] text-yellow-900 xs:mb-12 mdl:mb-24 mt-12`}
         >
         ВІДГУКИ
       </h2>

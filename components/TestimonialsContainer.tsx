@@ -17,11 +17,7 @@ const TestimonialsContainer = () => {
         <>
             {testimonials ? (<Testimonials testimonials={testimonials}/>) : 
                 (
-                <div
-                className='text-center items-center bg-gray-100 xs:pt-6 mdl:pt-22 md:pb-22 xs:pb-12'
-                >
                     <Spinner/>    
-                </div>
                 )
             }
         </>

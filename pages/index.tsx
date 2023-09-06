@@ -30,7 +30,7 @@ export default function Home() {
           <MeinGalery/>
           <SpecialAbout/>
           <TestimonialsContainer/>
-            <ContactWithUs/>
+          <ContactWithUs/>
       </main>
     </>
   )
