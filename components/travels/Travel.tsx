@@ -18,13 +18,15 @@ const Travel = ({ travel }) => {
         <div
         className='xs:w-full xl:w-[70%]'
         >
-            <img 
+            <Image 
                 src={travel?.img && travel.img} 
                 alt="tourpic" 
-                className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg w-full h-full'
+                className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg w-full h-full object-cover'
+                width={500}
+                height={500}
                 />
               {router.pathname !== '/'  ? (
-            <Link
+            <a
                 className='absolute -mt-20 mdl:-ml-[7%]  xl:ml-[25%] z-10 tracking-tight font-normal text-white
                 border-2 p-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300 rounded-2xl'
                   href='/#contactform'
@@ -32,16 +34,16 @@ const Travel = ({ travel }) => {
             
             >
               Забронювати
-            </Link>
+            </a>
             ) : (
-              <Link 
+              <a 
                 className='absolute -mt-20 mdl:-ml-[7%] xl:ml-[25%] z-10 tracking-tight font-normal text-white
                  border-2 p-2 border-yellow-500 hover:border-white hover:text-yellow-500 duration-300 rounded-2xl'
                   href='#contactform'
                   rel="noopener noreferrer"
             >
               Забронювати
-            </Link>
+            </a>
             )
           }
         </div>
