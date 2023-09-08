@@ -84,8 +84,7 @@ const ContactWithUs = () => {
             <option value={0}>По телефону</option>
             <option value={1}>Через месенджер</option>
           </select>
-          <div
-          >
+          <div>
             <button
             className='p-4 border-2 border-yellow-500 text-[#408692] rounded-2xl hover:text-yellow-500 hover:border-[#408692] duration-300'
             type='submit'
