@@ -12,7 +12,7 @@ const Footer = () => {
       <div
       className='flex items-center justify-center xs:ml-0 mdl:ml-20 xs:text-sm mdl:text-lg'
       >
-        &copy; Твоя Подорож, 2023
+        &copy; tak prosto Travel, 2023
       </div>
       <div
       className='flex gap-2 xs:mr-0 mdl:mr-20 items-center justify-center'

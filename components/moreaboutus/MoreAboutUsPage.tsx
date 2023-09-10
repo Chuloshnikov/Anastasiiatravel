@@ -33,32 +33,27 @@ const MoreAboutUsPage = () => {
                 <h3
                 className={`${styles.cinzelFont} font-semibold text-[22px] text-yellow-500`}
                 >
-                  Аліна
+                  Ліна
                 </h3>
                 <p
                 className='text-base font-semibold xs:text-center xs:items-center'
                 >
-                  Кожна з нас відчуває неабияке захоплення від подорожей
-                  Нашою ціллю є ділитися емоціями та враженнями 
-                  Саме на Мадейрі ми познайомилась з Ліною, а після поїхали разом ще в одну подорож до Норвегії, Лофотенські острови 
-                  Після цієї подорожі прийшла Ідея подорожувати та ділитися цим досвідом з іншими людьми 
-                  ми зрозуміли  що хочемо  обʼєднувати людей  
-                  Частим явищем у  відкладання подорожі,є відсутність компаніі
-                  У наших поіздках ,ти знайдеш собі однодумців і можливо навіть друзів з якими будеш подорожувати у Майбутньому
+                  Привіт! Я Ліна &#128522;, Як мені прийшла ідея організовувати подорожі? Після останньої мандрівки на Лофотенські острови
+                  я зрозуміла що хочу об&apos;'єднувати людей та шукати для них найкращі локації. Тому що подорож, це найкраще що можна купити за гроші. 
                 </p>
                 <div
-                className='flex flex-col gap-2'
+                className='flex flex-col gap-2 mt-16'
                 >
                     <Link
                     className='flex gap-1 items-center font-semibold text-rose-500 hover:text-rose-600 duration-300'
-                    href="/"
+                    href="https://instagram.com/l.i.n_ok?igshid=MzRlODBiNWFlZA=="
                     >
                       <span>Instagram</span> 
                       <AiOutlineInstagram/>
                     </Link>
                     <Link
                     className='flex gap-1 items-center font-semibold text-blue-500 hover:text-blue-600 duration-300'
-                    href="/"
+                    href="https://t.me/liino_chek"
                     >
                       <span>Telegram</span>
                       <FaTelegram/>
@@ -90,27 +85,22 @@ const MoreAboutUsPage = () => {
                 <p
                 className='text-base font-semibold'
                 >
-                  Кожна з нас відчуває неабияке захоплення від подорожей
-                  Нашою ціллю є ділитися емоціями та враженнями 
-                  Саме на Мадейрі ми познайомилась з Ліною, а після поїхали разом ще в одну подорож до Норвегії, Лофотенські острови 
-                  Після цієї подорожі прийшла Ідея подорожувати та ділитися цим досвідом з іншими людьми 
-                  ми зрозуміли  що хочемо  обʼєднувати людей  
-                  Частим явищем у  відкладання подорожі,є відсутність компаніі
-                  У наших поіздках ,ти знайдеш собі однодумців і можливо навіть друзів з якими будеш подорожувати у Майбутньому
+                   Привіт! Я Анастасія &#128522;, Як мені прийшла ідея організовувати подорожі? Останнім часом я багато подорожую, і саме в цих подорожах 
+                  я знаходжу нових цікавих знайомих та друзів. Тому, коли Ліна запропонувала мені допомагати з організацією, мені здалась ця ідея класною.
                 </p>
                 <div
-                className='flex flex-col gap-2'
+                className='flex flex-col gap-2 mt-16'
                 >
                     <Link
                     className='flex gap-1 items-center font-semibold text-rose-500 hover:text-rose-600 duration-300'
-                    href="/"
+                    href="https://instagram.com/anastasia.zahorodnia"
                     >
                       <span>Instagram</span> 
                       <AiOutlineInstagram/>
                     </Link>
                     <Link
                     className='flex gap-1 items-center font-semibold text-blue-500 hover:text-blue-600 duration-300'
-                    href="/"
+                    href="https://t.me/AnastasiaZahorodnia"
                     >
                       <span>Telegram</span>
                       <FaTelegram/>

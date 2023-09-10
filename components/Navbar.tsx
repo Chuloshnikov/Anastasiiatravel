@@ -56,8 +56,10 @@ const Navbar = () => {
         <div
         className='-ml-2 flex flex-col'
         >
-            <span>
-              Anastasiia
+            <span
+            className='ml-10'
+            >
+              tak prosto
             </span>
             <span 
             className='text-6xl -mt-4'

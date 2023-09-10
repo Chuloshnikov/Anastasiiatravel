@@ -29,12 +29,12 @@ const ContactWithUs = () => {
         className={`${styles.cinzelFont} font-base tracking-widest xs:text-[22px] md:text-[44px] xl:text-[68px] text-yellow-500 mb-2`}
         
         >
-            МАЕШ ЗАПИТАННЯ?
+            МАЄШ ЗАПИТАННЯ?
         </h2>
         <p
         className='text-[#408692] xs:text-lg mdl:text-2xl xs:mx-2 mdl:mx-0'
         >
-            Залиш свої контакні данні та ми дамо фідбек
+            Залиши свої контактні данні та ми надамо фідбек
         </p>
         <div
         className='xs:mx-4 mdl:mx-40'
@@ -49,11 +49,11 @@ const ContactWithUs = () => {
                 type="text"
                 name="name"
                 required
-                placeholder="введіть ваше і&#39;мя..."
+                placeholder="введіть ваше ім&#39;я..."
                 />
                 <input
                 className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
-                type="number" 
+                type="phone" 
                 name="phone" 
                 required
                 placeholder="380737777777..."
@@ -63,19 +63,19 @@ const ContactWithUs = () => {
                 type="email" 
                 name="email"
                 required
-                placeholder="вашемайл@gmail.com..."
+                placeholder="вашемейл@gmail.com..."
                 />
                 <input
                 className='p-2 text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-2 focus:ring-0'
                 type="text" 
                 name="message"
                 required
-                placeholder="Напишить який тур Вас цікавить, або ваше питання..."
+                placeholder="Напишить який тур Вас цікавить, або ваше запитання..."
                 />
                 <label
                 className='text-[#408692] text-lg'
                 >
-                    Як Вам було бы краще отримати фідбек?
+                    Як Вам було б краще отримати фідбек?
                 </label>
                 <select
             className='text-lg border-2 border-[#408692] text-[#408692] rounded-xl focus:border-yellow-500 focus:border-1 focus:ring-0'

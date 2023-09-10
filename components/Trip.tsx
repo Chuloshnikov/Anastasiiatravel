@@ -42,12 +42,12 @@ const Trip = ({travel}) => {
                                         <p
                                         className='line-through'
                                         >
-                                            {travel?.oldPrice && `${travel.oldPrice}$`}
+                                            {travel?.oldPrice && `${travel.oldPrice}EUR`}
                                         </p>
                                         <div
                                         className='flex gap-1 text-yellow-500 font-bold'
                                         >
-                                            <p>{travel?.price}$</p>
+                                            <p>{travel?.price + " EUR"}</p>
                                             <p>{travel?.priceNote && `${travel.priceNote}`}</p>
                                         </div>
                                     </div>
