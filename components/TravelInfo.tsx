@@ -23,7 +23,7 @@ const TravelInfo = () => {
     >
       <div>
           <div
-          className='flex flex-col gap-10 pt-[12%] pb-[10%]'
+          className='flex flex-col gap-10 pt-[12%] pb-[10%] mb-24'
           >
           <Travel travel={travel}/>
           </div>

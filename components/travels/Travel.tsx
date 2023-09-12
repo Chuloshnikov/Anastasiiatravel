@@ -16,7 +16,7 @@ const Travel = ({ travel }) => {
     flex xs:flex-col xs:text-center xl:text-start xl:flex-row gap-5'
     >
         <div
-        className='xs:w-full xl:w-[70%]'
+        className='xs:w-full xl:w-[100%]'
         >
             <Image 
                 src={travel?.img && travel.img} 
@@ -51,7 +51,7 @@ const Travel = ({ travel }) => {
             className='xs:w-full xl:w-[30%] p-2 flex flex-col gap-2'
             >
             <h3
-                className={`${styles.cinzelFont} font-semibold text-[22px] text-yellow-500`}
+                className={`${styles.cinzelFont} font-semibold text-[32px] text-yellow-500`}
                 >
                 {travel?.title}
             </h3>
