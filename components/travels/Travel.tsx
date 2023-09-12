@@ -74,7 +74,7 @@ const Travel = ({ travel }) => {
                     <p
                         className='line-through font-semibold'
                         >
-                        {travel?.oldPrice && travel.oldPrice + " EUR"}
+                        {travel?.oldPrice > 0 ? travel.oldPrice + " EUR" : ""}
                     </p>
                     <div
                         className='flex gap-1 text-yellow-500 font-bold'

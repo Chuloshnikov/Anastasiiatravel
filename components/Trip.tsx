@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/cinzel.module.css';
+import Image from 'next/image';
 
 const Trip = ({travel}) => {
   return (
@@ -9,9 +10,11 @@ const Trip = ({travel}) => {
         >
                 <div
                 >
-                    <img
+                    <Image
                     className='xs:h-[350px] xs:w-[300px] md:h-[492px] md:w-[792px] overflow-hidden rounded-2xl'
                     src={travel?.img} alt="tour"
+                    width={1200}
+                    height={800}
                     alt="travelpic"
                     />
                     <div
