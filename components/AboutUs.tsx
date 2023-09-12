@@ -21,58 +21,37 @@ const AboutUs = () => {
         </h2>
         <div>
             <div
-            className='border-2 border-yellow-500 rounded-2xl xs:flex-col xl:flex-row flex gap-5 xs:mx-5 mdl:mx-40'
+            className='border-2 border-yellow-500 rounded-2xl xs:flex-col xl:flex-row flex gap-2 xs:mx-5 mdl:mx-20 xl:mx-10 xl:mx-[400px]'
             >
                 <div
-                className=' flex xs:w-full xl:w-[50%] xs:p-4 lg:p-14 xs:text-center xs:justify-center'
+                className=' flex xs:w-full xl:w-[50%] xs:p-4 lg:p-8 xs:text-center xs:justify-center'
                 >
                     <p
-                    className={`${styles.cinzelFont} font-normal tracking-widest xs:text-sm md:text-lg xl:text-2xl text-yellow-900`}
+                    className={`${styles.cinzelFont} font-normal tracking-widest xs:text-sm md:text-2xl text-yellow-900`}
                     >
                         Ми організовуємо незабутні тури для невеликих груп. Відвідай обов'язкові місця та відкрий для себе наші унікальні локації.
-                        "tak prosto Travel" - це авторські, групові та комфортні тури. Ми ретельно плануємо кожну подорож, пропонуючи нашим клієнтам найкращі краєвиди та пейзажі,
+                        "tak prosto Travel" - це авторські, групові та комфортні тури. Наша команда ретельно планує кожну подорож, пропонуючи нашим клієнтам найкращі краєвиди та пейзажі,
                         досліджуємо топові локації на авто, куштуємо національну кухню та дегустуємо місцеві напої.
-                        Ми допомагаємо зручно та цікаво відкрити нові країни та змінити своє бачення світу.
-                        З нами кожна подорож стає пригодою. У наших поїздках ти знайдеш собі однодумців і можливо навідь друзів, з якими будеш подорожувати у майбутньому.
+                        Допомагаємо зручно та цікаво відкрити нові країни та змінити своє бачення світу.
+                        У наших поїздках ти знайдеш собі однодумців і можливо навідь друзів, з якими будеш подорожувати у майбутньому.
                     </p>
                 </div>
                 <div
-                className='flex justify-end xs:w-full xs:justify-center xl:w-[50%] gap-10 xs:mb-4 mdl:mb-0 xs:p-4 mdl:p-14'
+                className='flex xs:w-full xs:justify-center xl:w-[50%] gap-2 xs:mb-4 mdl:mb-0 xs:p-4 mdl:p-8'
                 >
                     <div
-                    className='flex flex-col xs:hidden lgl:flex gap-5'
+                    className='flex flex-col xs:gap-2 mdl:gap-14'
                     >
-                        <div
-                        className='pt-4'
-                        >
                         <Image
-                            className='w-[200px] rounded-2xl'
-                            src={one}
-                            alt='imageOne'
-                            />
-                        </div>
-                        <div
-                        >
-                            <Image
-                                className='w-[200px] rounded-2xl'
+                                className='w-[300px] rounded-2xl'
                                 src={two}
                                 alt='imageTwo'
                                 />
-                        </div>
-                    </div>
-                    <div
-                    className='flex flex-col xs:gap-5 mdl:gap-14'
-                    >
-                        <Image 
-                        className='w-[400px] rounded-2xl'
-                        src={withWine}
-                        alt='imageThree'
-                        />
                         <div
                         className=''
                         >
                             <Link 
-                            className='text-yellow-500 xs:p-4 mdl:p-8 xs:text-xs mdl:text-lg border-2 border-yellow-500 rounded-2xl hover:border-[#408692] hover:text-[#408692] duration-300'
+                            className='text-yellow-500 p-4 xs:text-xs mdl:text-lg border-2 border-yellow-500 rounded-2xl hover:border-[#408692] hover:text-[#408692] duration-300'
                             href="/moreaboutus"
                             >
                                 БІЛЬШЕ ПРО НАС

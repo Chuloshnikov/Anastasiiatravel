@@ -31,12 +31,12 @@ const MoreAboutUsPage = () => {
             className='p-4 flex flex-col gap-2 xs:text-center xs:items-center'
             >
                 <h3
-                className={`${styles.cinzelFont} font-semibold text-[22px] text-yellow-500`}
+                className={`${styles.cinzelFont} font-semibold text-[32px] text-yellow-500`}
                 >
                   Ліна
                 </h3>
                 <p
-                className='text-base font-semibold xs:text-center xs:items-center'
+                className='text-xl italic font-semibold xs:text-center xs:items-center'
                 >
                   Привіт! Я Ліна &#128522;, Як мені прийшла ідея організовувати подорожі? Після останньої мандрівки на Лофотенські острови
                   я зрозуміла що хочу об&apos;'єднувати людей та шукати для них найкращі локації. Тому що подорож, це найкраще що можна купити за гроші. 
@@ -78,12 +78,12 @@ const MoreAboutUsPage = () => {
             className='p-4 flex flex-col gap-2 xs:text-center xs:items-center'
             >
                 <h3
-                className={`${styles.cinzelFont} font-semibold text-[22px] text-yellow-500`}
+                className={`${styles.cinzelFont} font-semibold text-[32px] text-yellow-500`}
                 >
                   Анастасія
                 </h3>
                 <p
-                className='text-base font-semibold'
+                className='text-xl font-semibold italic'
                 >
                    Привіт! Я Анастасія &#128522;, Як мені прийшла ідея організовувати подорожі? Останнім часом я багато подорожую, і саме в цих подорожах 
                   я знаходжу нових цікавих знайомих та друзів. Тому, коли Ліна запропонувала мені допомагати з організацією, мені здалась ця ідея класною.
