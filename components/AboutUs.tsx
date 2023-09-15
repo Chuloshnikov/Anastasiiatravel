@@ -2,10 +2,7 @@ import React from 'react';
 import styles from '../styles/cinzel.module.css';
 import Image from 'next/image';
 import one from '../assets/images/one.webp';
-import bigone from '../assets/images/oneBig.webp';
-import withWine from '../assets/images/withWine.webp';
 import two from '../assets/images/two.webp';
-import bigtwo from '../assets/images/twoBig.webp';
 import Link from 'next/link';
 
 const AboutUs = () => {
@@ -21,7 +18,7 @@ const AboutUs = () => {
         </h2>
         <div>
             <div
-            className='border-2 border-yellow-500 rounded-2xl xs:flex-col xl:flex-row flex gap-2 xs:mx-5 mdl:mx-20 xl:mx-10 xl:mx-[400px]'
+            className='border-2 border-yellow-500 rounded-2xl xs:flex-col xl:flex-row flex gap-2 xs:mx-5 mdl:mx-20 xl:mx-10 xl:mx-[100px]'
             >
                 <div
                 className=' flex xs:w-full xl:w-[50%] xs:p-4 lg:p-8 xs:text-center xs:justify-center'
@@ -48,7 +45,7 @@ const AboutUs = () => {
                                 alt='imageTwo'
                                 />
                         <div
-                        className=''
+                        className='xs:mt-4 mdl:mt-0'
                         >
                             <Link 
                             className='text-yellow-500 p-4 xs:text-xs mdl:text-lg border-2 border-yellow-500 rounded-2xl hover:border-[#408692] hover:text-[#408692] duration-300'

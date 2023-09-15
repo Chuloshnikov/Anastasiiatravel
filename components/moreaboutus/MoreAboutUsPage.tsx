@@ -12,10 +12,10 @@ const MoreAboutUsPage = () => {
   return (
     <div>
         <div
-        className='flex flex-col gap-10 pt-[12%] pb-[10%]'
+        className='flex flex-col gap-10 pt-[12%] pb-[10%] mx-4'
         >
           <div
-          className='max-w-[1200px] xs:mx-2 mdl:mx-auto text-yellow-900 bg-gray-100 
+          className='max-w-[1200px] xs:mx-2 mdl:mx-auto bg-gray-100 
           hover:opacity-90 duration-300 rounded-xl mx-2 border-4 border-[#408692]
           flex xs:flex-col mdl:flex-row'
           >
@@ -36,7 +36,7 @@ const MoreAboutUsPage = () => {
                   Ліна
                 </h3>
                 <p
-                className='text-xl italic font-semibold xs:text-center xs:items-center'
+                className='xs:text-base mdl:text-xl italic font-semibold xs:text-center xs:items-center text-[#408692] px-10'
                 >
                   Привіт! Я Ліна &#128522;, Як мені прийшла ідея організовувати подорожі? Після останньої мандрівки на Лофотенські острови
                   я зрозуміла що хочу об&apos;'єднувати людей та шукати для них найкращі локації. Тому що подорож, це найкраще що можна купити за гроші. 
@@ -62,7 +62,7 @@ const MoreAboutUsPage = () => {
             </div>
           </div>
           <div
-          className='max-w-[1200px] xs:mx-2 mdl:mx-auto text-yellow-900 bg-gray-100 
+          className='max-w-[1200px] xs:mx-2 mdl:mx-auto text-[#408692] bg-white 
           hover:opacity-90 duration-300 rounded-xl mx-2 border-4 border-[#408692]
           flex xs:flex-col mdl:flex-row gap-5'
           >
@@ -83,7 +83,7 @@ const MoreAboutUsPage = () => {
                   Анастасія
                 </h3>
                 <p
-                className='text-xl font-semibold italic'
+                className='xs:text-base mdl:text-xl italic font-semibold xs:text-center xs:items-center text-[#408692] px-10'
                 >
                    Привіт! Я Анастасія &#128522;, Як мені прийшла ідея організовувати подорожі? Останнім часом я багато подорожую, і саме в цих подорожах 
                   я знаходжу нових цікавих знайомих та друзів. Тому, коли Ліна запропонувала мені допомагати з організацією, мені здалась ця ідея класною.
