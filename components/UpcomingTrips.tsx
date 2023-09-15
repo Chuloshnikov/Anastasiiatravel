@@ -32,7 +32,8 @@ const UpcomingTrips = () => {
         <div 
           className='flex gap-5 justify-center'
           >
-              <Trip travel={closestTravel[0]}/>
+              {isLoading ? (<div><Spinner/></div>
+              ) : (<Trip travel={closestTravel[0]}/>)}
         </div>
     </div>
   )

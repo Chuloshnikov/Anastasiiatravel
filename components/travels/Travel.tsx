@@ -16,12 +16,12 @@ const Travel = ({ travel }) => {
     flex xs:flex-col xs:text-center xl:text-start xl:flex-row gap-5'
     >
         <div
-        className='xs:w-full xl:w-[100%]'
+        className='xs:w-full w-[100%]'
         >
             <Image 
                 src={travel?.img && travel.img} 
                 alt="tourpic" 
-                className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg w-full h-full object-cover'
+                className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg xs:max-h-[185px] sml:max-h-[450px] lg:max-h-[600px] h-full w-full object-cover'
                 width={500}
                 height={500}
                 />
