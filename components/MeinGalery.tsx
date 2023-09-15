@@ -28,7 +28,7 @@ const MeinGalery = () => {
     className='bg-gray-100  xs:pt-12 md:pt-24 pb-12'
     >
         <div
-        className='border-2 border-yellow-500 rounded-2xl flex xs:mx-6 md:mx-20 lg:mx-40'
+        className='border-2 border-yellow-500 rounded-2xl flex mdl:mx-20 xl:mx-10 xl:mx-[100px]'
         >
             <div
             className='flex mx-auto w-full xs:hidden mdl:flex'
