@@ -21,7 +21,7 @@ const Travel = ({ travel }) => {
             <Image 
                 src={travel?.img && travel.img} 
                 alt="tourpic" 
-                className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg xs:max-h-[185px] sml:max-h-[450px] lg:max-h-[600px] h-full w-full object-cover'
+                className='overflow-hidden xs:rounded-t-lg xl:rounded-l-lg h-full w-full object-cover'
                 width={500}
                 height={500}
                 />
