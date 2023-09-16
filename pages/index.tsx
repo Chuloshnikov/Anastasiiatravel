@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Anastasiia Travel</title>
+        <title>Tak Prosto Travel</title>
         <meta name="description" content="Твоя незабутня подорож" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="favicon.ico" />
